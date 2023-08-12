@@ -1,0 +1,41 @@
+
+
+.Title-screen {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(/src/image/12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    color: white;
+}
+
+.Title-screen h1 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 400;
+}
+.Title-screen h6 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: end;
+    position: relative;
+    right: 40px;
+}
+
+.Title-screen button {
+    margin-top: 37px;
+    padding: 14px 30px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
