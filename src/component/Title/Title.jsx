@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./Title.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Title = () => {
+  AOS.init();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -33,7 +37,12 @@ const Title = () => {
   return (
     <div className="Title-screen">
       {displayText ? (
-        <h1 style={{ whiteSpace: "pre-wrap" }}>{displayText}</h1>
+        <h1
+          className="animate__animated animate__fadeInUp"
+          style={{ whiteSpace: "pre-wrap" }}
+        >
+          {displayText}
+        </h1>
       ) : (
         <h1>
           The cosmos is within us. We are made of star-stuff. We are a way for

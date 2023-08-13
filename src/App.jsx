@@ -1,5 +1,6 @@
 import Slider from "./component/Banner/Banner";
 import Navbar from "./component/Navbar/Navbar";
+import SolarSystem from "./component/SolarSystem/SolarSystem";
 import Title from "./component/Title/Title";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Slider />
       <Title />
+      <SolarSystem />
     </>
   );
 }
