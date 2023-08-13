@@ -52,5 +52,28 @@
     .item a svg {
         position: relative;
         left: 3px;
-        top: 1px;
+        top: 2px;
+        font-size: 16px;
+    }
+
+    .item h3 {
+        font-size: 16px;
+        margin: 0px 0;
+        font-weight: 500;
+    }
+
+    .item p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .item a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        left: 2px;
+        font-size: 12px;
     }
