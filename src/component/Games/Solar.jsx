@@ -33,7 +33,9 @@ function SolarSystemGame() {
       setGameOver(true);
     }
   }, [timeLeft]);
-
+  const handleReloadClick = () => {
+    window.location.reload();
+  };
   return (
     <>
     <Navbar/>
@@ -60,7 +62,7 @@ function SolarSystemGame() {
         <div className='game-over'>
             <img src={img} alt="" />
             <p>Game Over! Your Final Score: {score}</p>
-        <a href="">Wanna Play Again</a></div>
+        <a onClick={handleReloadClick}>Wanna Play Again</a></div>
       )}
     </div>
     </>
