@@ -12,7 +12,7 @@
         background-attachment: fixed;
         color: white;
         padding-top: 130px;
-        height: 80vh;
+        height: 100vh;
         
     }
   
@@ -23,16 +23,16 @@
         justify-content: center;
         margin: 50px 0;
     }
-.planets button {
-    background-color: #80808073;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    font-family: 'Montserrat';
-}
+    .planets button {
+        background-color: rgba(128, 128, 128, 0.4509803922);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        width: 85px;
+        height: 85px;
+        font-family: "Montserrat";
+    }
   
   .planets button.active {
     background-color: #ffffff;
