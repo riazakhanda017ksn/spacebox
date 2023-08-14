@@ -1,13 +1,51 @@
 import { Link, useParams } from "react-router-dom";
+import React, { useState } from 'react';
 import { items } from "../Data/Data";
 import Navbar from "../Navbar/Navbar";
 import "./SolarSystemDetails.scss";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
+import swal from "sweetalert";
 
 const SolarSystemDetails = () => {
   const { id } = useParams();
   const solar = items.find((solar) => solar.id === id);
-  const { name, history1, history2, history3, history4, img, banner } = solar;
+  const { name, history1, history2, history3, history4, img, banner,QuizData } = solar;
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+
+  const currentQuestion = QuizData.questions[currentQuestionIndex];
+
+  const handleOptionClick = (option) => {
+    setSelectedAnswer(option);
+  };
+
+  const handleAnswerSubmit = () => {
+    setShowAlert(true);
+
+    if (selectedAnswer === currentQuestion.correctAnswer) {
+      swal(
+        "Correct!",
+        "Keep learning dear",
+        "success"
+      );
+    } else {
+      
+      swal("Incorrect!", "Please try again dear", "danger");
+    }
+
+    // Move to the next question
+    setSelectedAnswer('');
+    setShowAlert(false);
+    if (currentQuestionIndex < QuizData.questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      swal(
+        "Quiz Finished!",
+        "You are brilliant!",
+        "success"
+      );
+    }}
   return (
     <>
       <Navbar />
@@ -41,6 +79,31 @@ const SolarSystemDetails = () => {
         </div>
         <p>{history3}</p>
         <p>{history4}</p>
+        {/*  */}
+        <div className="quiz-container">
+      <h1>Quiz Time!</h1>
+      {currentQuestion && (
+        <div className="question">
+          <p>{currentQuestion.question}</p>
+          <div className="options">
+            {currentQuestion.options.map((option, index) => (
+              <button
+                id="edit"
+                key={index}
+                className={selectedAnswer === option ? 'selected' : ''}
+                onClick={() => handleOptionClick(option)}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
+          <button onClick={handleAnswerSubmit}>Submit Answer</button>
+          {showAlert && selectedAnswer === '' && (
+            <p className="error-message">Please select an answer.</p>
+          )}
+        </div>
+      )}
+    </div>
       </div>
     </>
   );

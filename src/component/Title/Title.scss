@@ -4,26 +4,25 @@
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(/src/image/12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+     padding: 100px 20px;
     color: white;
 }
 
 .Title-screen h1 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     line-height: 28px;
     font-weight: 400;
 }
 .Title-screen h6 {
     margin: 0;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 2px;
     width: 100%;

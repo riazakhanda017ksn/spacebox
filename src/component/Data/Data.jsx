@@ -31,6 +31,24 @@ export const items = [
       "Jupiter's stunning appearance, with its bands of clouds and swirling storms, has captured the imagination of scientists and space enthusiasts alike. The planet's study continues to provide valuable insights into the formation and dynamics of our solar system, as well as the broader universe",
     img: img,
     banner: banner,
+    QuizData:{
+      questions: [
+        {
+          question: "What is the largest planet in our solar system?",
+          options: ["Earth", "Saturn", "Jupiter", "Mars"],
+          correctAnswer: "Jupiter",
+        },
+        {
+          question: "Jupiter is primarily composed of which element?",
+          options: ["Hydrogen", "Oxygen", "Carbon", "Helium"],
+          correctAnswer: "Hydrogen",
+        },
+        {
+          question: "Which famous storm is present on Jupiter?",
+          options: ["Tornado", "Cyclone", "Hurricane", "Great Red Spot"],
+          correctAnswer: "Great Red Spot",
+        },
+      ]}
   },
   {
     id: "12",
@@ -45,6 +63,23 @@ export const items = [
       "As the only known habitable planet, Earth serves as a precious reminder of the delicate balance required for life to thrive. The study of Earth's systems and processes, collectively known as Earth sciences, provides insights into how our planet functions and how human activities impact its health.Appreciating Earth's beauty, diversity, and intricate interplay of systems underscores the importance of responsible stewardship to ensure its preservation for current and future generations.",
     img: img2,
     banner: banner2,
+    QuizData: {
+      questions: [
+        {
+          question: "What is the third planet from the sun?",
+          options: ["Venus", "Mars", "Earth", "Jupiter"],
+          correctAnswer: "Earth",
+        },
+        {
+          question: "Which layer of the Earth's atmosphere contains the ozone layer?",
+          options: ["Troposphere", "Stratosphere", "Mesosphere", "Exosphere"],
+          correctAnswer: "Stratosphere",
+        },
+        {
+          question: "Approximately how much of the Earth's surface is covered by water?",
+          options: ["25%", "50%", "75%", "97%"],
+          correctAnswer: "71%",
+        },]}
   },
   {
     id: "14",
@@ -60,6 +95,23 @@ export const items = [
       "Because of its unique characteristics and its proximity to the Sun, studying Mercury provides valuable insights into the formation and evolution of rocky planets, as well as the effects of extreme solar conditions on planetary environments. Several space missions, including NASA's MESSENGER (MErcury Surface, Space ENvironment, GEochemistry, and Ranging) mission, have contributed significantly to our understanding of this enigmatic planet.",
     img: img3,
     banner: banner3,
+    QuizData:{
+      questions: [
+        {
+          question: "Which planet is closest to the sun?",
+          options: ["Venus", "Mars", "Earth", "Mercury"],
+          correctAnswer: "Mercury",
+        },
+        {
+          question: "Mercury is known for having extreme temperature differences between day and night. Why does this occur?",
+          options: ["Thin atmosphere", "Thick clouds", "Strong magnetic field", "Active volcanoes"],
+          correctAnswer: "Thin atmosphere",
+        },
+        {
+          question: "What is the surface of Mercury mostly covered with?",
+          options: ["Water oceans", "Ice", "Rocks and craters", "Thick forests"],
+          correctAnswer: "Rocks and craters",
+        },]}
   },
   {
     id: "15",
@@ -75,6 +127,23 @@ export const items = [
       "Mars continues to captivate our imagination and drive scientific curiosity as we seek to unlock its mysteries and understand its role in the context of the solar system's evolution and the potential for life beyond our home planet.",
     img: img4,
     banner: banner4,
+    QuizData:{
+      questions: [
+        {
+          question: "Which planet is often called the 'Red Planet'?",
+          options: ["Venus", "Mars", "Jupiter", "Neptune"],
+          correctAnswer: "Mars",
+        },
+        {
+          question: "Which famous mountain on Mars is the tallest known mountain in the solar system?",
+          options: ["Mount Olympus", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
+          correctAnswer: "Mount Olympus",
+        },
+        {
+          question: "What is the largest canyon system on Mars?",
+          options: ["Grand Canyon", "Mars Rift", "Valles Marineris", "Canyon del Diablo"],
+          correctAnswer: "Valles Marineris",
+        },]}
   },
   {
     id: "16",
@@ -91,6 +160,23 @@ export const items = [
       "While Venus might not be habitable for humans in its current state, studying this extreme environment provides insights into planetary evolution, climate science, and the potential consequences of a runaway greenhouse effect. Despite its challenges, Venus remains an intriguing subject of scientific research and exploration.",
     img: img5,
     banner: banner5,
+     QuizData: {
+      questions: [
+        {
+          question: "Which planet is often referred to as Earth's 'sister planet'?",
+          options: ["Mars", "Jupiter", "Venus", "Saturn"],
+          correctAnswer: "Venus",
+        },
+        {
+          question: "Venus has a thick atmosphere primarily composed of which gas?",
+          options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+          correctAnswer: "Carbon Dioxide",
+        },
+        {
+          question: "What feature on Venus is often associated with a high-temperature greenhouse effect?",
+          options: ["Polar ice caps", "Desert sand dunes", "Great Red Spot", "Runaway greenhouse effect"],
+          correctAnswer: "Runaway greenhouse effect",
+        },]}
   },
   {
     id: "17",
@@ -107,6 +193,23 @@ export const items = [
       "Saturn's beauty and complexity continue to inspire scientific investigation and capture the public's imagination. Its study helps us better understand the formation and dynamics of gas giants, the potential for habitable environments on moons, and the broader mysteries of the solar system.",
     img: img6,
     banner: banner6,
+    QuizData: {
+      questions: [
+        {
+          question: "Which planet is known for its spectacular ring system?",
+          options: ["Jupiter", "Mars", "Saturn", "Uranus"],
+          correctAnswer: "Saturn",
+        },
+        {
+          question: "What are Saturn's rings primarily composed of?",
+          options: ["Ice and dust", "Gold and silver", "Solid rock", "Diamonds"],
+          correctAnswer: "Ice and dust",
+        },
+        {
+          question: "Saturn is a gas giant primarily made up of which two elements?",
+          options: ["Hydrogen and Helium", "Carbon and Oxygen", "Nitrogen and Argon", "Neon and Xenon"],
+          correctAnswer: "Hydrogen and Helium",
+        },]}
   },
   {
     id: "18",
@@ -123,6 +226,23 @@ export const items = [
       "Uranus has a retinue of moons, with the five largest being Miranda, Ariel, Umbriel, Titania, and Oberon. These moons vary in size, composition, and geological features, and they provide insights into the complex history and interactions of the Uranian system.While fewer missions have been sent to Uranus compared to other planets, there is growing interest in exploring this enigmatic ice giant. The study of Uranus can offer valuable insights into the formation and evolution of the outer solar system, the dynamics of planetary tilts, and the conditions present in distant and extreme environments.",
     img: img7,
     banner: banner7,
+    QuizData:{
+      questions: [
+        {
+          question: "Which planet is known for its unique sideways rotation?",
+          options: ["Neptune", "Venus", "Uranus", "Mars"],
+          correctAnswer: "Uranus",
+        },
+        {
+          question: "Uranus is primarily composed of which gases?",
+          options: ["Hydrogen and Helium", "Oxygen and Nitrogen", "Carbon Dioxide and Methane", "Ammonia and Sulfur"],
+          correctAnswer: "Hydrogen and Helium",
+        },
+        {
+          question: "What distinctive feature on Uranus makes it appear blue-green in color?",
+          options: ["Giant storm", "Rings", "Layers of clouds", "Atmospheric methane"],
+          correctAnswer: "Atmospheric methane",
+        },]}
   },
   {
     id: "19",
@@ -139,6 +259,23 @@ export const items = [
       "The study of Neptune helps us better understand the diverse range of planetary bodies in our solar system, as well as the dynamics of atmospheres, weather patterns, and the unique features that make each planet an intricate and awe-inspiring world.",
     img: img9,
     banner: banner8,
+   QuizData: {
+      questions: [
+        {
+          question: "Which planet is the farthest from the sun in our solar system?",
+          options: ["Uranus", "Jupiter", "Neptune", "Pluto"],
+          correctAnswer: "Neptune",
+        },
+        {
+          question: "What is the most distinctive feature of Neptune's atmosphere?",
+          options: ["Red spot", "Giant storm", "Ammonia clouds", "Methane clouds"],
+          correctAnswer: "Giant storm",
+        },
+        {
+          question: "Neptune is primarily composed of which gases?",
+          options: ["Oxygen and Nitrogen", "Hydrogen and Helium", "Carbon Dioxide and Methane", "Ammonia and Sulfur"],
+          correctAnswer: "Hydrogen and Helium",
+        },]}
   },
   {
     id: "20",
@@ -155,5 +292,22 @@ export const items = [
       "The study of the Moon continues to yield valuable insights into the early history of our solar system and the processes that have shaped rocky bodies. Lunar exploration and research have the potential to inform us about Earth's past and its place within the cosmos. Additionally, the Moon has become a focal point for discussions about future human exploration and potential colonization beyond our home planet.",
     img: img10,
     banner: banner9,
+   QuizData: {
+      questions: [
+        {
+          question: "What is the natural satellite of Earth called?",
+          options: ["Phobos", "Titan", "Luna", "Europa"],
+          correctAnswer: "Luna",
+        },
+        {
+          question: "What is the average distance between the Moon and Earth?",
+          options: ["100,000 kilometers", "238,855 miles", "384,400 kilometers", "500,000 miles"],
+          correctAnswer: "384,400 kilometers",
+        },
+        {
+          question: "Why do we always see the same side of the Moon from Earth?",
+          options: ["The Moon has a very slow rotation", "The Moon has a perfect circle orbit", "Earth's gravity locks the Moon's rotation", "It's just a coincidence"],
+          correctAnswer: "The Moon has a very slow rotation",
+        },]}
   },
 ];
