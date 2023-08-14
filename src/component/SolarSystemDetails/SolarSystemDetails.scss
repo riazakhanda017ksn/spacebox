@@ -9,14 +9,14 @@
     letter-spacing: 1px;
 }
 
-.solar-system h3 {
+.solar-systems h3 {
     margin: 0;
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 1px;
 }
 
-.solar-system p {
+.solar-systems p {
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 20px;
@@ -49,3 +49,15 @@
     background: white;
     color: black;
   }
+
+  .solar-systems{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)),
+    url(../../image/pexels-kai-pilger-1341279.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 120px 30px;
+
+}
