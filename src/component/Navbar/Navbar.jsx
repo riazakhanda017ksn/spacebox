@@ -31,7 +31,7 @@ const Navbar = () => {
               exit={{ opacity: 0, y: -20 }}
             >
               <Link to="/">Home</Link>
-              <a href="#">About</a>
+              <Link to="/wanna-play-game">Wanna Play Game</Link>
               <a href="#">Services</a>
               <a href="#">Contact</a>
             </motion.div>

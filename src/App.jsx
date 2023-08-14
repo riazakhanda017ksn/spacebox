@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./component/Home/Home";
 import SolarSystemDetails from "./component/SolarSystemDetails/SolarSystemDetails";
 import ScrollTop from "./component/ScrollToTop/ScrollToTop";
+import SolarSystemGame from "./component/Games/Solar";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/wanna-play-game" element={< SolarSystemGame />} />
           <Route
             path="/solar-system-details/:id"
             element={<SolarSystemDetails />}

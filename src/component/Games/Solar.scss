@@ -1,0 +1,90 @@
+.solar-system-game {
+    text-align: center;
+    padding: 20px;
+  }
+  .solar-system-game{
+   
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)),
+        url(../../image/dhumketu.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding-top: 130px;
+        height: 80vh;
+        
+    }
+  
+    .planets {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 0;
+    }
+.planets button {
+    background-color: #80808073;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    font-family: 'Montserrat';
+}
+  
+  .planets button.active {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .solar-system-game h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.solar-system-game h4 {
+    margin: 4px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.solar-system-game h5 {
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.solar-system-game p {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.game-over a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    font-weight: 500;
+    display: inline-block;
+    &:hover{
+        background: white;
+        color: black;
+        transition: .3s ease-in-out;
+    }
+}
+
+.game-over a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+}
+.game-over img {
+    width: 190px;
+}
