@@ -1,15 +1,21 @@
-import Slider from "./component/Banner/Banner";
-import Navbar from "./component/Navbar/Navbar";
-import SolarSystem from "./component/SolarSystem/SolarSystem";
-import Title from "./component/Title/Title";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./component/Home/Home";
+import SolarSystemDetails from "./component/SolarSystemDetails/SolarSystemDetails";
+import ScrollTop from "./component/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Slider />
-      <Title />
-      <SolarSystem />
+      <BrowserRouter>
+        <ScrollTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/solar-system-details/:id"
+            element={<SolarSystemDetails />}
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

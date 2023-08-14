@@ -1,0 +1,51 @@
+.solar-text h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.solar-text p {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.solar-system h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.solar-system p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.img-center img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-center{
+    text-align: center;
+}
+
+.solar-text button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 19px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: montserrat;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+  
+  .solar-text button:hover{
+    background: white;
+    color: black;
+  }

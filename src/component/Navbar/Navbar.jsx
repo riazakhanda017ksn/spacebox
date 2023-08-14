@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Navbar.scss";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,7 +30,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
               <a href="#">About</a>
               <a href="#">Services</a>
               <a href="#">Contact</a>
