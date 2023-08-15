@@ -49,13 +49,30 @@
   background-color: black;
   border-radius: none !important;
   box-shadow: none;
-  width: 40%;
+  width: 50%;
   height: 104vh;
   text-align: center;
   position: relative;
   bottom: 35px;
   justify-content: center;
   align-items: center;
+}
+
+.dropdown-content a {
+  display: flex !important;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  gap: 4px;
+}
+
+.dropdown-content a svg{
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-content a {
+  padding-top: 3px !important;
 }
 
 .menu-items a {
@@ -81,4 +98,29 @@
   background-color: #ffffff;
   margin: 3px 0;
   transform: rotate(45deg);
+}
+
+a.specifiq-gap {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+a.specifiq-gap svg {
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-content {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+  margin-bottom: 0px;
+}
+
+.dropdown-content a {
+  display: inline-block;
 }

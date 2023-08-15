@@ -9,7 +9,47 @@ import videoOneGif from "../../image/sv8.gif";
 import videoOneGif2 from "../../image/giphy.gif";
 import videoOneGif22 from "../../image/starts.jpg";
 import videoOneGif23 from "../../image/giphysss.gif";
+import React, { useState } from 'react';
+import swal from "sweetalert";
+
 function SpaceHistory() {
+    const { name, history1, history2, history3, history4, img, banner,QuizData } = solar;
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+
+  const currentQuestion = QuizData.questions[currentQuestionIndex];
+
+  const handleOptionClick = (option) => {
+    setSelectedAnswer(option);
+  };
+
+  const handleAnswerSubmit = () => {
+    setShowAlert(true);
+
+    if (selectedAnswer === currentQuestion.correctAnswer) {
+      swal(
+        "Correct!",
+        "Keep learning dear",
+        "success"
+      );
+    } else {
+      
+      swal("Incorrect!", "Please try again dear", "danger");
+    }
+
+    // Move to the next question
+    setSelectedAnswer('');
+    setShowAlert(false);
+    if (currentQuestionIndex < QuizData.questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+    } else {
+      swal(
+        "Quiz Finished!",
+        "You are brilliant!",
+        "success"
+      );
+    }}
   return (
     <>
     <Navbar/>
@@ -364,7 +404,7 @@ rings, volcanic Io, and icy Europa.
 </li>
 
 <li >
-<span style={{fontWeight:"600"}}>2009 </span> On 20 July, almost exactly 15 years after fragments of comet
+<span style={{fontWeight:"600"}}>2009: </span> On 20 July, almost exactly 15 years after fragments of comet
 Shoemaker-Levy slammed into Jupiter, a comet or asteroid crashes
 into the giant planet's southern hemisphere.
 </li>
@@ -374,7 +414,7 @@ into the giant planet's southern hemisphere.
 interior structure and magnetosphere.
 </li>
 <li >
-<span style={{fontWeight:"600"}}>2016 </span> NASA's Juno spacecraft arrives at Jupiter, conducting an indepth investigation of the planet's atmosphere, deep structure and
+<span style={{fontWeight:"600"}}>2016: </span> NASA's Juno spacecraft arrives at Jupiter, conducting an indepth investigation of the planet's atmosphere, deep structure and
 magnetosphere for clues to its origin and evolution.
 
 </li>
