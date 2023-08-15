@@ -33,9 +33,7 @@
 //       setGameOver(true);
 //     }
 //   }, [timeLeft]);
-//   const handleReloadClick = () => {
-//     window.location.reload();
-//   };
+
 //   return (
 //     <>
 //     <Navbar/>
@@ -79,6 +77,7 @@ import img2 from '../../image/Happy-Emoji-PNG-removebg-preview.png'
 import img3 from '../../image/r.png'
 import Navbar from '../Navbar/Navbar';
  const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+ 
  const gameDuration = 60; 
 function Solar() {
   const [score, setScore] = useState(0);
@@ -87,7 +86,10 @@ function Solar() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gamePaused, setGamePaused] = useState(false);
   const [gameOver, setGameOver] = useState(false);
-  const intialScore = 55;
+  const numberArray = [55,60,65,70,75,80];
+
+  const [randomIndex, setRandomIndex] = useState(null);
+  const [randomNumber, setRandomNumber] = useState(null);
 
   useEffect(() => {
     if (gameStarted && !gameOver && !gamePaused && timeLeft > 0) {
@@ -99,6 +101,7 @@ function Solar() {
     } else if (timeLeft === 0) {
       setGameOver(true);
     }
+
   }, [timeLeft, gameStarted, gamePaused, gameOver]);
 
   useEffect(() => {
@@ -109,6 +112,10 @@ function Solar() {
   }, [score, gameStarted, gameOver]);
 
   const handleStartClick = () => {
+    const newIndex = Math.floor(Math.random() * numberArray.length);
+    const newRandomNumber = numberArray[newIndex];
+    setRandomIndex(newIndex);
+    setRandomNumber(newRandomNumber);
     setGameStarted(true);
   };
 
@@ -120,6 +127,10 @@ function Solar() {
     if (clickedPlanet === targetPlanet) {
       setScore(score + 1);
     }
+  };
+
+  const handleReloadClick = () => {
+    window.location.reload();
   };
 
   return (
@@ -136,8 +147,8 @@ function Solar() {
         <>
           {gameOver ? (
             <div className='game-over'><p>Game Over! Your Score: {score}</p>
-            <img src={score === intialScore || score > intialScore ? img2 : img3} alt="" />
-            <p>{score === intialScore || score > intialScore ? "You are Winner!" :"You failed! Try again."}</p></div>
+            <img src={score === randomNumber || score > randomNumber ? img2 : img3} alt="" />
+            <p>{score === randomNumber || score > randomNumber ? "You are Winner!" :"You failed! Try again."}</p></div>
             
           ) : (
             <div>
@@ -154,11 +165,11 @@ function Solar() {
                   </button>
                 ))}
               </div>
-              <p>Score Target: {intialScore }</p>
+              <p>Score Target: {randomNumber }</p>
               <p>Your Game Score: {score }</p>
               <div className="flexs-button">
               <button onClick={handlePauseClick}>{gamePaused ? 'Resume Game' : 'Pause Game'}</button>
-              <button>Reset Game</button>
+              <button onClick={handleReloadClick}>Reset Game</button>
               </div>
             </div>
           )}
