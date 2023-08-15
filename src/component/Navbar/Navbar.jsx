@@ -45,12 +45,11 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <div className="dropdown-content">
                     {/* Dropdown content goes here */}
-                    <a href=""> Universe's History  <ArrowRightAltOutlinedIcon /></a> 
-                    <a href=""> Solar System History <ArrowRightAltOutlinedIcon /></a> 
-                    <a href=""> Planet Earth History <ArrowRightAltOutlinedIcon /></a> 
-                    <a href=""> Stars History <ArrowRightAltOutlinedIcon /></a>  
-                    <a href=""> Milky Way History <ArrowRightAltOutlinedIcon /></a>  
-                    <a href=""> Milky Way History <ArrowRightAltOutlinedIcon /></a>  
+                    <Link to='/universal-history'> Universe's History  <ArrowRightAltOutlinedIcon /></Link> 
+                    <Link to='/solar-system-history'> Solar System History <ArrowRightAltOutlinedIcon /></Link> 
+                    <Link to='/planet-history'> Planet Earth History <ArrowRightAltOutlinedIcon /></Link> 
+                    <Link to='/star-history'> Stars History <ArrowRightAltOutlinedIcon /></Link>  
+                    <Link to='/milky-way-history'> Milky Way History <ArrowRightAltOutlinedIcon /></Link>  
                   </div>
                 )}
 
