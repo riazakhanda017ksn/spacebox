@@ -18,9 +18,9 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 20 }}
         >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
+          <div className={`${isOpen ?'close': 'bar'}`}></div>
+          <div className={`${isOpen ?'none':'bar' }`}></div>
+          <div className={`${isOpen ?'closes': 'bar' }`}></div>
         </motion.div>
         <AnimatePresence>
           {isOpen && (
@@ -32,7 +32,7 @@ const Navbar = () => {
             >
               <Link to="/">Home</Link>
               <Link to="/wanna-play-game">Wanna Play Game</Link>
-              <a href="#">Services</a>
+              <Link to='/history'>History</Link>
               <a href="#">Contact</a>
             </motion.div>
           )}
