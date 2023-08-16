@@ -45,6 +45,7 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <div className="dropdown-content">
                     {/* Dropdown content goes here */}
+                    <Link to='/space-exploration'> Space Exploration   <ArrowRightAltOutlinedIcon /></Link> 
                     <Link to='/universal-history'> Universe's History  <ArrowRightAltOutlinedIcon /></Link> 
                     <Link to='/solar-system-history'> Solar System History <ArrowRightAltOutlinedIcon /></Link> 
                     <Link to='/planet-history'> Planet Earth History <ArrowRightAltOutlinedIcon /></Link> 

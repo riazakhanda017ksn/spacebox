@@ -8,6 +8,7 @@ import UniverseHistory from "./component/UniverseHistory/UniverseHistory";
 import SolarSystemHistory from "./component/SolarSystemHistory/SolarSystemHistory";
 import PlanetEarth from "./component/PlanetEarth/PlanetEarth";
 import StarHistory from "./component/StarHistory/StarHistory";
+import SpaceExploration from "./component/SpaceExploration/SpaceExploration";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/space-exploration" element={<SpaceExploration/>} />
           <Route path="/star-history" element={<StarHistory/>} />
           <Route path="/planet-history" element={<PlanetEarth/>} />
           <Route path="/solar-system-history" element={<SolarSystemHistory />} />
