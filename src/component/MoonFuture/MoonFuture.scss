@@ -1,0 +1,47 @@
+.moon-future{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(../../image/pexels-jmohan-balachandaram-10765361.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    padding: 0 20px;
+}
+
+.moon-future h1 {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.moon-future h4 {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.moon-future p {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.moon-future button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: montserrat;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+}

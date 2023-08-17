@@ -9,14 +9,18 @@ import SolarSystemHistory from "./component/SolarSystemHistory/SolarSystemHistor
 import PlanetEarth from "./component/PlanetEarth/PlanetEarth";
 import StarHistory from "./component/StarHistory/StarHistory";
 import SpaceExploration from "./component/SpaceExploration/SpaceExploration";
+import NasaFuture from "./component/NavaFuture/NavaFuture";
+import MoonFuture from "./component/MoonFuture/MoonFuture";
 
 function App() {
   return (
-    <>
+    <div className="mobile">
       <BrowserRouter>
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/moon-future" element={<MoonFuture />} />
+          <Route path="/nasa-future" element={<NasaFuture />} />
           <Route path="/space-exploration" element={<SpaceExploration/>} />
           <Route path="/star-history" element={<StarHistory/>} />
           <Route path="/planet-history" element={<PlanetEarth/>} />
@@ -30,7 +34,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
