@@ -11,6 +11,8 @@ import StarHistory from "./component/StarHistory/StarHistory";
 import SpaceExploration from "./component/SpaceExploration/SpaceExploration";
 import NasaFuture from "./component/NavaFuture/NavaFuture";
 import MoonFuture from "./component/MoonFuture/MoonFuture";
+import EarthFuture from "./component/EarthFuture/EarthFuture";
+import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFuture";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <ScrollTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/techhnolies-future" element={<TechnologiesFuture/>} />
+          <Route path="/earth-future" element={<EarthFuture />} />
           <Route path="/moon-future" element={<MoonFuture />} />
           <Route path="/nasa-future" element={<NasaFuture />} />
           <Route path="/space-exploration" element={<SpaceExploration/>} />

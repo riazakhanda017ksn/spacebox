@@ -78,9 +78,9 @@ const Navbar = () => {
                     {/* Dropdown content goes here */}
                     <Link to='/nasa-future'> NASA'S Future  <ArrowRightAltOutlinedIcon /></Link>
                     <Link to='/moon-future'> Moon's Future <ArrowRightAltOutlinedIcon /></Link>
-                    <Link to='/'> Earth's Future
+                    <Link to='/earth-future'> Earth's Future
                       <ArrowRightAltOutlinedIcon /></Link>
-                    <Link to='/'> Technology <ArrowRightAltOutlinedIcon /></Link>
+                    <Link to='/techhnolies-future'> Technology <ArrowRightAltOutlinedIcon /></Link>
                     <Link to='/'> Human Spaceflight
                       <ArrowRightAltOutlinedIcon /></Link>
                     <Link to='/'> Universe's Future <ArrowRightAltOutlinedIcon /></Link>

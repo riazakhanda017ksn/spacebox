@@ -1,13 +1,14 @@
-
+import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 import videoOneGif222 from "../../image/20160801110400-shutterstock-241509286.jpeg";
 import videoOneGif22 from "../../image/earth_moon.png";
 import videoOneGif2 from "../../image/Low-Boom_Flight_Demonstrator.jpg";
 import videoOneGif from "../../image/NASA_X-57_Maxwell.png";
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
+
 import './MoonFuture.scss'
-import { Link } from 'react-router-dom';
+
 const MoonFuture = () => {
     return (
         <>
