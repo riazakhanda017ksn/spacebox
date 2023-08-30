@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Title.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+import { motion, AnimatePresence } from 'framer-motion';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const Title = () => {
-  AOS.init();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const [scrollY, setScrollY] = useState(0);
+  const textVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
+  };
   const textLines = [
     "Exploration is in our nature. We began as wanderers, and we are wanderers still. We have lingered long enough on the shores of the cosmic ocean. We are ready at last to set sail for the stars.,",
     "The lifetime of a human being is measured by decades, the lifetime of the Sun is a hundred million times longer. Compared to a star, we are like mayflies, fleeting ephemeral creatures who live out their lives in the course of a single day.",
@@ -34,24 +37,85 @@ const Title = () => {
     }
   };
 
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <div className="Title-screen">
-      {displayText ? (
-        <h1
-          className="animate__animated animate__fadeInUp"
-          style={{ whiteSpace: "pre-wrap" }}
-        >
-          {displayText}
-        </h1>
-      ) : (
-        <h1>
-          The cosmos is within us. We are made of star-stuff. We are a way for
-          the universe to know itself.
-        </h1>
-      )}
-      <h6> - Carl Sagan</h6>
-      <button onClick={handleClick}>NEXT QUOTE</button>{" "}
-    </div>
+    <>
+      <div className="Title-screen2">
+
+        <div className="scroll-container">
+          <div style={{
+            transform: `scale(${0.5 + scrollY * 0.001})`, whiteSpace: "pre-wrap",
+            transition: '1s easeInOut', fontWeight: "500"
+          }}>
+            {displayText ? (
+
+              <h1
+                className="scaling-text"
+              >
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentIndex}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    variants={textVariants}
+                  >
+                    {displayText}
+
+                  </motion.div>
+                </AnimatePresence>
+              </h1>
+
+            ) : (
+              <h1>
+                The cosmos is within us. We are made of star-stuff. We are a way for
+                the universe to know itself.
+              </h1>
+            )}
+            <h6> - Carl Sagan</h6>
+            <div className="text-end">
+              <button onClick={handleClick}>Next Quate</button>{" "}
+              <span>
+                <ArrowRightAltIcon />
+              </span>
+            </div></div>
+        </div>
+
+
+      </div>
+
+      <div className="Title-screen">
+
+        <div className="mobiles">
+          {displayText ? (
+            <h1
+              className="animate__animated animate__fadeInUp"
+              style={{ whiteSpace: "pre-wrap" }}
+            >
+              {displayText}
+            </h1>
+          ) : (
+            <h1>
+              The cosmos is within us. We are made of star-stuff. We are a way for
+              the universe to know itself.
+            </h1>
+          )}
+          <h6> - Carl Sagan</h6>
+          <div className="text-center">
+            <button onClick={handleClick}>NEXT QUOTE   </button>{" "}
+          </div>
+        </div>
+      </div>
+
+    </>
   );
 };
 

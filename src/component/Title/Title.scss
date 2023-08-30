@@ -1,41 +1,124 @@
 
-
-.Title-screen {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(/src/image/12.jpg);
+.Title-screen2 {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(../../image/12.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-     padding: 100px 20px;
+    padding: 170px;
     color: white;
-}
-
-.Title-screen h1 {
-    font-size: 20px;
-    text-align: center;
-    line-height: 28px;
-    font-weight: 400;
-}
-.Title-screen h6 {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    width: 100%;
-    text-align: end;
+    overflow: hidden;
+    z-index: 99999 !important;
     position: relative;
-    right: 40px;
+}
+.scroll-container h1 {
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 44px;
 }
 
-.Title-screen button {
-    margin-top: 37px;
-    padding: 14px 30px;
+.scroll-container h6 {
+    font-family: "Gluten", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 25px 0;
+}
+
+.scroll-container span {
+    position: relative;
+    top: 8px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.text-view {
+
+    display: block;
+}
+
+.scroll-container {
+    position: relative;
+    display: block;
+}
+
+.scaling-text {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-container button {
     background: none;
     color: white;
-    border: 1px solid white;
-    font-family: montserrat !important;
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-end {
+    text-align: end;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .Title-screen2{
+        display: none;
+    }
+    .scroll-container {
+        position: relative;
+        display: block;
+    }
+
+    .text-view {
+        display: none;
+    }
+
+    .Title-screen h1 {
+        font-size: 20px;
+        text-align: center;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    .Title-screen h6 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: end;
+        position: relative;
+        right: 40px;
+    }
+
+    .Title-screen button {
+        margin-top: 37px;
+        padding: 14px 30px;
+        background: none;
+        color: white;
+        border: 1px solid white;
+        font-family: montserrat !important;
+    }
+
+    .Title-screen {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(/src/image/12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 20px;
+        color: white;
+        height: auto;
+    }
+
 }

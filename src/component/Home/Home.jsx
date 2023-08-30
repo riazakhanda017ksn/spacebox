@@ -2,6 +2,10 @@ import Navbar from "../Navbar/Navbar";
 import Slider from "../Banner/Banner";
 import Title from "../Title/Title";
 import SolarSystem from "../SolarSystem/SolarSystem";
+import SolarAnimatedVideo from "../SolarAnimatedVideo/SolarAnimatedVideo";
+import TheMoon from "../TheMoon/TheMoon";
+import OurObjective from "../OurObjective/OurObjective";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -10,6 +14,9 @@ const Home = () => {
       <Slider />
       <Title />
       <SolarSystem />
+      <SolarAnimatedVideo />
+      <OurObjective />
+      <Footer />
     </>
   );
 };

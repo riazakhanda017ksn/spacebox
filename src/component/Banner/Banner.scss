@@ -1,7 +1,7 @@
 .video-section {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     background: black;
     z-index: 2;
     color: #fafafa;
@@ -99,6 +99,57 @@
   font-weight: 500;
 }
 
+
+
+
+
+.flex-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.content h1 span {
+  font-family: "Gluten", cursive;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 58px;
+  margin-top: 14px;
+  display: inline-block;
+}
+.video-section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 58px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: montserrat;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.video-section button:hover{
+  background: white;
+  color: black;
+}
+
+.content p {
+  font-size: 15px;
+  line-height: 27px;
+}
+.content h1 {
+  font-size: 52px;
+  line-height: 60px;
+  margin-bottom: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 990px)  {
+
+
 .content h1 {
   font-size: 26px;
   line-height: 36px;
@@ -111,8 +162,8 @@
   padding: 0 18px;
   font-weight: 300;
   margin-bottom: 26px;
+  line-height: 19px;
 }
-
 .video-section button {
   display: flex;
   justify-content: center;
@@ -124,16 +175,31 @@
   font-family: montserrat;
   font-size: 12px;
   transition: .3s ease-in-out;
+  margin-top: 0px;
 }
 
-.video-section button:hover{
+.video-section button:hover{ 
   background: white;
   color: black;
 }
 
-.flex-center {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+.content h1 span {
+  font-family: montserrat;
+}
+.content {
+  padding: 0 20px;
 }
 
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: black;
+  z-index: 2;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+}

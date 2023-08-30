@@ -20,6 +20,7 @@ import banner9 from "../../image/moon.jpg";
 export const items = [
   {
     id: "11",
+    borderBottom: "delete",
     name: "The Jupiter",
     history1:
       "Jupiter, the largest planet in our solar system, is a breathtaking gas giant known for its immense size and distinctive features. It's primarily composed of hydrogen and helium, with no solid surface like Earth. One of its most iconic features is the Great Red Spot, a massive storm that has been raging for centuries.",
@@ -31,7 +32,8 @@ export const items = [
       "Jupiter's stunning appearance, with its bands of clouds and swirling storms, has captured the imagination of scientists and space enthusiasts alike. The planet's study continues to provide valuable insights into the formation and dynamics of our solar system, as well as the broader universe",
     img: img,
     banner: banner,
-    QuizData:{
+    className: "none",
+    QuizData: {
       questions: [
         {
           question: "What is the largest planet in our solar system?",
@@ -48,10 +50,12 @@ export const items = [
           options: ["Tornado", "Cyclone", "Hurricane", "Great Red Spot"],
           correctAnswer: "Great Red Spot",
         },
-      ]}
+      ]
+    }
   },
   {
     id: "12",
+    borderBottom: "delete",
     name: "The Earth",
     history1:
       "Earth, our home planet, is a remarkable and diverse world that supports an incredible array of life forms. It is the third planet from the Sun and is the only known planet to harbor life. With a diverse range of ecosystems, from lush rain forests to arid deserts, Earth's biodiversity is awe-inspiring.",
@@ -63,6 +67,7 @@ export const items = [
       "As the only known habitable planet, Earth serves as a precious reminder of the delicate balance required for life to thrive. The study of Earth's systems and processes, collectively known as Earth sciences, provides insights into how our planet functions and how human activities impact its health.Appreciating Earth's beauty, diversity, and intricate interplay of systems underscores the importance of responsible stewardship to ensure its preservation for current and future generations.",
     img: img2,
     banner: banner2,
+    className: "none",
     QuizData: {
       questions: [
         {
@@ -79,10 +84,12 @@ export const items = [
           question: "Approximately how much of the Earth's surface is covered by water?",
           options: ["25%", "50%", "75%", "97%"],
           correctAnswer: "71%",
-        },]}
+        },]
+    }
   },
   {
     id: "14",
+    borderBottom: "delete",
     name: "The Murcary",
     history1:
       "Mercury, the closest planet to the Sun, is a fascinating world with a unique set of characteristics. It's the smallest planet in our solar system and lacks a significant atmosphere, which results in extreme temperature variations between its scorching daytime and freezing nighttime conditions.",
@@ -95,7 +102,9 @@ export const items = [
       "Because of its unique characteristics and its proximity to the Sun, studying Mercury provides valuable insights into the formation and evolution of rocky planets, as well as the effects of extreme solar conditions on planetary environments. Several space missions, including NASA's MESSENGER (MErcury Surface, Space ENvironment, GEochemistry, and Ranging) mission, have contributed significantly to our understanding of this enigmatic planet.",
     img: img3,
     banner: banner3,
-    QuizData:{
+    className: "",
+
+    QuizData: {
       questions: [
         {
           question: "Which planet is closest to the sun?",
@@ -111,10 +120,13 @@ export const items = [
           question: "What is the surface of Mercury mostly covered with?",
           options: ["Water oceans", "Ice", "Rocks and craters", "Thick forests"],
           correctAnswer: "Rocks and craters",
-        },]}
+        },]
+    }
   },
   {
     id: "15",
+    borderBottom: "delete",
+
     name: "The Mars",
     history1:
       "Mars, often referred to as the Red Planet, is a captivating world with a history of intrigue and exploration. It's the fourth planet from the Sun and is known for its distinctive reddish appearance, caused by iron oxide, or rust, on its surface.",
@@ -127,7 +139,8 @@ export const items = [
       "Mars continues to captivate our imagination and drive scientific curiosity as we seek to unlock its mysteries and understand its role in the context of the solar system's evolution and the potential for life beyond our home planet.",
     img: img4,
     banner: banner4,
-    QuizData:{
+    className: "none",
+    QuizData: {
       questions: [
         {
           question: "Which planet is often called the 'Red Planet'?",
@@ -143,11 +156,14 @@ export const items = [
           question: "What is the largest canyon system on Mars?",
           options: ["Grand Canyon", "Mars Rift", "Valles Marineris", "Canyon del Diablo"],
           correctAnswer: "Valles Marineris",
-        },]}
+        },]
+    }
   },
   {
     id: "16",
+    borderBottom: "delete",
     name: "The Venus",
+
     history1:
       "Venus, often referred to as Earth's sister planet, is a remarkable but inhospitable world with a unique set of characteristics. It's the second planet from the Sun and is similar in size and composition to Earth, earning it the moniker of Earth's sister. However, despite these similarities, Venus has a vastly different environment that makes it one of the most hostile places in the solar system.",
 
@@ -160,7 +176,8 @@ export const items = [
       "While Venus might not be habitable for humans in its current state, studying this extreme environment provides insights into planetary evolution, climate science, and the potential consequences of a runaway greenhouse effect. Despite its challenges, Venus remains an intriguing subject of scientific research and exploration.",
     img: img5,
     banner: banner5,
-     QuizData: {
+    className: "none",
+    QuizData: {
       questions: [
         {
           question: "Which planet is often referred to as Earth's 'sister planet'?",
@@ -176,10 +193,12 @@ export const items = [
           question: "What feature on Venus is often associated with a high-temperature greenhouse effect?",
           options: ["Polar ice caps", "Desert sand dunes", "Great Red Spot", "Runaway greenhouse effect"],
           correctAnswer: "Runaway greenhouse effect",
-        },]}
+        },]
+    }
   },
   {
     id: "17",
+    borderBottom: "delete",
     name: "The Saturn",
     history1:
       "Saturn, the sixth planet from the Sun, is a mesmerizing giant in our solar system known for its stunning ring system and unique characteristics. It's the second-largest planet, surpassed only by Jupiter, and boasts a distinctive appearance that has captured the imagination of people for centuries.Saturn's most iconic feature is its extensive ring system, composed of billions of particles ranging in size from tiny grains to larger chunks of ice and rock. These rings are made up of countless individual ringlets and are a striking sight through telescopes. The rings are not solid structures but rather a collection of debris and ice chunks orbiting the planet.",
@@ -193,6 +212,8 @@ export const items = [
       "Saturn's beauty and complexity continue to inspire scientific investigation and capture the public's imagination. Its study helps us better understand the formation and dynamics of gas giants, the potential for habitable environments on moons, and the broader mysteries of the solar system.",
     img: img6,
     banner: banner6,
+    className: "",
+
     QuizData: {
       questions: [
         {
@@ -209,10 +230,12 @@ export const items = [
           question: "Saturn is a gas giant primarily made up of which two elements?",
           options: ["Hydrogen and Helium", "Carbon and Oxygen", "Nitrogen and Argon", "Neon and Xenon"],
           correctAnswer: "Hydrogen and Helium",
-        },]}
+        },]
+    }
   },
   {
     id: "18",
+    borderBottom: "",
     name: "The Uranus",
     history1:
       "Uranus, the seventh planet from the Sun, is a distant and mysterious ice giant in our solar system. It stands out for its unique rotation and appearance, making it a fascinating object of study and exploration.",
@@ -226,7 +249,8 @@ export const items = [
       "Uranus has a retinue of moons, with the five largest being Miranda, Ariel, Umbriel, Titania, and Oberon. These moons vary in size, composition, and geological features, and they provide insights into the complex history and interactions of the Uranian system.While fewer missions have been sent to Uranus compared to other planets, there is growing interest in exploring this enigmatic ice giant. The study of Uranus can offer valuable insights into the formation and evolution of the outer solar system, the dynamics of planetary tilts, and the conditions present in distant and extreme environments.",
     img: img7,
     banner: banner7,
-    QuizData:{
+    className: "none",
+    QuizData: {
       questions: [
         {
           question: "Which planet is known for its unique sideways rotation?",
@@ -242,10 +266,13 @@ export const items = [
           question: "What distinctive feature on Uranus makes it appear blue-green in color?",
           options: ["Giant storm", "Rings", "Layers of clouds", "Atmospheric methane"],
           correctAnswer: "Atmospheric methane",
-        },]}
+        },]
+    }
   },
   {
     id: "19",
+    borderBottom: "",
+
     name: "The Neptune",
     history1:
       "Neptune, the eighth and farthest planet from the Sun, is a distant and dynamic ice giant that holds a wealth of intriguing features and mysteries. It was the first planet to be discovered through mathematical predictions before it was actually observed.Similar to Uranus, Neptune is an ice giant composed of hydrogen, helium, and ices such as water, ammonia, and methane. Its blue color, often referred to as Neptune Blue, is the result of methane in its atmosphere absorbing red light while reflecting blue light.",
@@ -259,7 +286,9 @@ export const items = [
       "The study of Neptune helps us better understand the diverse range of planetary bodies in our solar system, as well as the dynamics of atmospheres, weather patterns, and the unique features that make each planet an intricate and awe-inspiring world.",
     img: img9,
     banner: banner8,
-   QuizData: {
+    className: "none",
+
+    QuizData: {
       questions: [
         {
           question: "Which planet is the farthest from the sun in our solar system?",
@@ -275,10 +304,13 @@ export const items = [
           question: "Neptune is primarily composed of which gases?",
           options: ["Oxygen and Nitrogen", "Hydrogen and Helium", "Carbon Dioxide and Methane", "Ammonia and Sulfur"],
           correctAnswer: "Hydrogen and Helium",
-        },]}
+        },]
+    }
   },
   {
     id: "20",
+    borderBottom: "",
+
     name: "The Earth's Moon",
     history1:
       "Earth's Moon, often simply referred to as the Moon is a captivating celestial body that has captivated humanity for millennia. It is the fifth largest moon in the solar system and is the closest natural neighbor to our planet. The Moon's influence on Earth goes beyond its stunning appearance in the night sky; it has significant scientific, cultural, and historical importance.",
@@ -292,7 +324,8 @@ export const items = [
       "The study of the Moon continues to yield valuable insights into the early history of our solar system and the processes that have shaped rocky bodies. Lunar exploration and research have the potential to inform us about Earth's past and its place within the cosmos. Additionally, the Moon has become a focal point for discussions about future human exploration and potential colonization beyond our home planet.",
     img: img10,
     banner: banner9,
-   QuizData: {
+    className: "",
+    QuizData: {
       questions: [
         {
           question: "What is the natural satellite of Earth called?",
@@ -308,6 +341,7 @@ export const items = [
           question: "Why do we always see the same side of the Moon from Earth?",
           options: ["The Moon has a very slow rotation", "The Moon has a perfect circle orbit", "Earth's gravity locks the Moon's rotation", "It's just a coincidence"],
           correctAnswer: "The Moon has a very slow rotation",
-        },]}
+        },]
+    }
   },
 ];

@@ -1,0 +1,97 @@
+.our-objective {
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.904) 28.71%, rgba(0, 0, 0, 0.5) 100%), url(../../image/moons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    position: relative;
+    z-index: 99999 !important;
+
+}
+
+.space-man img {
+    width: 100px;
+    overflow: hidden;
+    transform: translate(-170px, -310px);
+    z-index: 9 !important;
+    position: relative;
+    opacity: 0.8;
+}
+
+img.image-styling {
+    width: 350px;
+    transform: translate(-370px, -16px);
+    transition: 3s ease-in-out;
+    overflow: hidden;
+}
+.follow-us {
+    width: 100%;
+}
+.flexes p {
+    display: contents;
+    background: red;
+}
+.flexes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.flexes span {
+    height: 1px;
+    background: white;
+    width: 62px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon a svg {
+    color: white;
+    margin-right: 12px;
+    font-size: 21px;
+    &:hover{
+        color: #d1d1d1;
+        transition: .3s ease-out;
+    }
+}
+
+.flexes p {
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.flex-texts {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.our-objective h1 {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: 0;
+}
+
+.flex-texts p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    font-weight: 300;
+    color: #d1d1d1;
+}

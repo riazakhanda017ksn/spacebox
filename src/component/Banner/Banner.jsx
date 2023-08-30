@@ -8,17 +8,17 @@ const Slider = () => {
       <div className="video-section">
         <video src={videoOne} muted loop autoPlay></video>
         <div className="video-overly">
-          <h4>SpaceBox</h4>
+          <h4 className="mobiles">SpaceBox</h4>
         </div>
         <>
           <div className="content">
             <h1>
-              Want to learn about <br /> <span>Solar System</span>
+              Want to learn about <br /> <span >Solar System</span>
             </h1>
             <p>
               This is a one minute demo of Solar desktop app: We’ve made this
               demo so you can find out if you like the graphics and if the
-              applications works for you. After purchasing the full version, you
+               applications <br /> works for you. After purchasing the full version, you
               can unlock this demo to the full desktop version.
             </p>
             <a className="flex-center">

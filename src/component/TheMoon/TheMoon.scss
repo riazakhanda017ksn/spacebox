@@ -1,0 +1,11 @@
+.moon-background {
+    background: linear-gradient(0deg, #000 0%, rgb(0 0 0 / 87%) 28.71%, rgba(0, 0, 0, 0) 100%), url(../../image/moons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}

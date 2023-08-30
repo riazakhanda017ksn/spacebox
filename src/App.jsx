@@ -16,7 +16,7 @@ import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFutur
 
 function App() {
   return (
-    <div className="mobile">
+    <>
       <BrowserRouter>
         <ScrollTop />
         <Routes>
@@ -38,7 +38,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
