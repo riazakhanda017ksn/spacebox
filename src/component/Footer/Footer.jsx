@@ -6,8 +6,10 @@ const Footer = () => {
     <div className='main-footer'>
       <div className="footer">
         <div className="footer-item">
-          <h4>About us</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident totam laudantium ex, quos temporibus eveniet id possimus sit! Voluptatibus!</p>
+          <h4>Our Plan</h4>
+          <p>Our main plan is to make this generation learn about space with entertainment and fun.
+            This generation loves to play games and watching animated videos , thats why we have created this webapp to make
+            them learn about space with the help of this game and animated videos</p>
         </div>
         <div className="footer-item position-space">
           <h4 style={{ paddingBottom: '10px' }}>History</h4>

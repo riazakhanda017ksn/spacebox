@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import "./Title.scss";
 import { motion, AnimatePresence } from 'framer-motion';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Title = () => {
+  AOS.init();
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scrollY, setScrollY] = useState(0);
@@ -12,7 +15,7 @@ const Title = () => {
     exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
   };
   const textLines = [
-    "Exploration is in our nature. We began as wanderers, and we are wanderers still. We have lingered long enough on the shores of the cosmic ocean. We are ready at last to set sail for the stars.,",
+    "Exploration is in our nature. We began as wanderers, and we are wanderers still. We have lingered long enough on the shores of the cosmic ocean. We are ready at last to set sail for the stars.",
     "The lifetime of a human being is measured by decades, the lifetime of the Sun is a hundred million times longer. Compared to a star, we are like mayflies, fleeting ephemeral creatures who live out their lives in the course of a single day.",
     "This is an example of showing text one after the other.",
     "We are stardust brought to life, then empowered by the universe to figure itself out and we have only just begun.",
@@ -45,16 +48,15 @@ const Title = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+
+
   }, []);
   return (
     <>
       <div className="Title-screen2">
 
         <div className="scroll-container">
-          <div style={{
-            transform: `scale(${0.5 + scrollY * 0.001})`, whiteSpace: "pre-wrap",
-            transition: '1s easeInOut', fontWeight: "500"
-          }}>
+          <div className={scrollY > 490 ? "scale" : "none"} data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" >
             {displayText ? (
 
               <h1
