@@ -13,30 +13,33 @@ import NasaFuture from "./component/NavaFuture/NavaFuture";
 import MoonFuture from "./component/MoonFuture/MoonFuture";
 import EarthFuture from "./component/EarthFuture/EarthFuture";
 import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFuture";
+// import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <ScrollTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/techhnolies-future" element={<TechnologiesFuture/>} />
-          <Route path="/earth-future" element={<EarthFuture />} />
-          <Route path="/moon-future" element={<MoonFuture />} />
-          <Route path="/nasa-future" element={<NasaFuture />} />
-          <Route path="/space-exploration" element={<SpaceExploration/>} />
-          <Route path="/star-history" element={<StarHistory/>} />
-          <Route path="/planet-history" element={<PlanetEarth/>} />
-          <Route path="/solar-system-history" element={<SolarSystemHistory />} />
-          <Route path="/universal-history" element={<UniverseHistory />} />
-          <Route path="/wanna-play-game" element={< SolarSystemGame />} />
-          <Route path="/milky-way-history" element={< SpaceHistory />} />
-          <Route
-            path="/solar-system-details/:id"
-            element={<SolarSystemDetails />}
-          />
-        </Routes>
+        {/* <AnimatePresence mode="wait"> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/techhnolies-future" element={<TechnologiesFuture />} />
+            <Route path="/earth-future" element={<EarthFuture />} />
+            <Route path="/moon-future" element={<MoonFuture />} />
+            <Route path="/nasa-future" element={<NasaFuture />} />
+            <Route path="/space-exploration" element={<SpaceExploration />} />
+            <Route path="/star-history" element={<StarHistory />} />
+            <Route path="/planet-history" element={<PlanetEarth />} />
+            <Route path="/solar-system-history" element={<SolarSystemHistory />} />
+            <Route path="/universal-history" element={<UniverseHistory />} />
+            <Route path="/wanna-play-game" element={< SolarSystemGame />} />
+            <Route path="/milky-way-history" element={< SpaceHistory />} />
+            <Route
+              path="/solar-system-details/:id"
+              element={<SolarSystemDetails />}
+            />
+          </Routes>
+          {/* </AnimatePresence> */}
       </BrowserRouter>
     </>
   );
