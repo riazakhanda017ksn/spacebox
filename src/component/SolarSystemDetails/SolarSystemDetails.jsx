@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import "./SolarSystemDetails.scss";
 import ArrowRightAltOutlinedIcon from "@mui/icons-material/ArrowRightAltOutlined";
 import swal from "sweetalert";
+import Footer from "../Footer/Footer";
 
 const SolarSystemDetails = () => {
   const { id } = useParams();
@@ -50,7 +51,7 @@ const SolarSystemDetails = () => {
     <>
       <Navbar />
       <div
-        className="solar-text"
+        className="solar-text content-of-history"
         style={{
           background: `linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)),url(${banner})`,
           backgroundRepeat: "no-repeat",
@@ -70,7 +71,7 @@ const SolarSystemDetails = () => {
           </button>
         </Link>
       </div>
-      <div className="solar-systems">
+      <div className="solar-systems histories-contents">
         <h3>History of {name}</h3>
         <p>{history1}</p>
         <p>{history2}</p>
@@ -105,6 +106,7 @@ const SolarSystemDetails = () => {
       )}
     </div>
       </div>
+      <Footer/>
     </>
   );
 };

@@ -9,6 +9,11 @@ import CloseIcon from '@mui/icons-material/Close';
 import RocketIcon from '@mui/icons-material/Rocket';
 import SearchIcon from '@mui/icons-material/Search';
 const Navbar = () => {
+  const textVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    exit: { opacity: 0, y: -20, transition: { duration: 0.5 } },
+  };
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
@@ -44,9 +49,65 @@ const Navbar = () => {
           </div>
           <div className="nav-item">
             <Link to="/">Home</Link>
+            <>
+              <a className="need-gap-for-pc" onClick={toggleDropdown}>History <KeyboardArrowDownIcon /> </a>
+              <>
+                <div
+                  className="positoning"
 
-            <a>History</a>
-            <a> The Future</a>
+                >
+                  {isDropdownOpen && (
+                    <div className="dropdown-content-for-pc">
+                      {/* Dropdown content goes here */}
+                      <Link to='/space-exploration' className="x"> Space Exploration </Link>
+                      <Link to='/universal-history' className="x"> Universe's History  </Link>
+                      <Link to='/solar-system-history' className="x"> Solar System History</Link>
+                      <Link to='/planet-history' className="x"> Planet Earth History </Link>
+                      <Link to='/star-history' className="x"> Stars History </Link>
+                      <Link to='/milky-way-history' className="x"> Milky Way History</Link>
+                    </div>
+                  )}
+                </div>
+              </>
+              <div>
+
+              </div>
+
+
+            </>
+
+            <>
+              <a className="need-gap-for-pc" onClick={toggleDropdown2}>The Future <KeyboardArrowDownIcon /> </a>
+              <>
+                <div
+                  className="positoning"
+                >
+                  {isDropdownOpen2 && (
+                    <div className="dropdown-content-for-pc">
+                      {/* Dropdown content goes here */}
+                      <Link to='/nasa-future' className="x"> NASA'S Future  </Link>
+                      <Link to='/moon-future' className="x"> Moon's Future </Link>
+                      <Link to='/earth-future' className="x"> Earth's Future
+                      </Link>
+                      <Link to='/techhnolies-future' className="x"> Technology</Link>
+                      <Link to='/' className="x"> Human Spaceflight</Link>
+                      <Link to='/' className="x"> Universe's Future </Link>
+                      <Link to='/' className="x"> Solar System
+                      </Link>
+                      <Link to='/' className="x"> NASA'S Event
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </>
+              <div>
+
+              </div>
+
+
+            </>
+
+
             <Link to="/wanna-play-game">Wanna Play Game</Link>
             <a >Contact</a>
           </div>

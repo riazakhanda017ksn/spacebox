@@ -21,6 +21,33 @@
   display: none;
 }
 
+a.need-gap-for-pc {
+  display: flex;
+}
+
+.positoning {
+  position: relative;
+}
+
+.dropdown-content-for-pc a {
+  display: block;
+  margin: 10px 0;
+  color: black;
+}
+.nav-item a {
+  cursor: pointer;
+}
+.dropdown-content-for-pc {
+  position: absolute;
+  background: #181818;
+  color: black;
+  width: 240px;
+  padding: 25px;
+  top: 31px;
+  left: -156px;
+  transform-origin: top center;
+}
+
 .search p{
   font-size: 15px;
   font-weight: 500;
@@ -34,6 +61,9 @@
   padding-top: 20px;
   animation: App 3s ease-in infinite ;
 }
+.dropdown-content-for-pc a {
+  margin: 10px 0 !important;
+}
 .nav-item a {
   color: white;
   text-decoration: none;
@@ -41,17 +71,28 @@
   font-weight: 500;
   font-size: 14px;
 }
-.nav-item {
-  display: flex;
-  gap: 22px;
+.dropdown-content-for-pc a {
+  margin: 13px 0 !important;
 }
 .nav-item {
   display: flex;
-  gap: 22px;
+}
+a.need-gap-for-pc {
+  position: relative;
+}
+a.need-gap-for-pc svg {
+  position: relative;
+  bottom: 2px;
+}
+.nav-item a {
+  margin: 0 10px !important;
 }
 .nav-item {
   display: flex;
-  gap: 22px;
+
+}
+.nav-item {
+  display: flex;
   position: relative;
   top: 27px;
 }
@@ -75,7 +116,7 @@
 }
 .nav-item {
   display: flex;
-  gap: 22px;
+ 
 }
 .pc-version-navbar {
   display: flex;

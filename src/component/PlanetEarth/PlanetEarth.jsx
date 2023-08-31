@@ -72,7 +72,7 @@ const PlanetEarth = () => {
     return (
         <>
             <Navbar />
-            <div className="PlanetEarth">
+            <div className="PlanetEarth content-of-history ">
                 <h1>The History of
                     Planet Earth
                 </h1>
@@ -87,7 +87,7 @@ const PlanetEarth = () => {
                 </Link>
             </div>
 
-            <div className="how-the-universe-work">
+            <div className="how-the-universe-work histories-contents">
                 <h1>The History of
                     Planet Earth
                 </h1>

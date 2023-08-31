@@ -76,7 +76,7 @@ const SpaceExploration = () => {
     return (
         <>
             <Navbar />
-            <div className="history-banners">
+            <div className="history-banners content-of-history">
                 <h1>Space Exploration </h1>
                 <p>The first rocket that was able to fly high enough to be considered ‘in space’ was the V-2
                     missile.This was a weapon developed by German Scientists in the Second World War.</p>
@@ -87,7 +87,7 @@ const SpaceExploration = () => {
                     </button>
                 </Link>
             </div>
-            <div className="how-the-universe-work">
+            <div className="how-the-universe-work histories-contents">
                 <h1>History Of Space Exploration </h1>
                 <li>The first rocket that was able to fly high enough to be considered ‘in space’ was the V-2
                     missile </li>

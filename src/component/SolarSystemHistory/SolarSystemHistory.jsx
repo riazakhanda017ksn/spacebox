@@ -76,7 +76,7 @@ const SolarSystemHistory = () => {
   return (
     <>
       <Navbar />
-      <div className="SolarSystemHistory">
+      <div className="SolarSystemHistory content-of-history">
         <h1>Solar System History</h1>
         <p>Our solar system is a wondrous place. Countless worlds lies spread across billions of kilometers of space, each dragged around the galaxy by our Sun like an elaborate clockwork. The smaller, inner planets are rocky</p>
         <Link to='/' className="flex-center">
@@ -87,7 +87,7 @@ const SolarSystemHistory = () => {
         </Link>
       </div>
 
-      <div className="how-the-universe-work">
+      <div className="how-the-universe-work histories-contents">
         <h1>Solar System
         </h1>
         <p>Our solar system is a wondrous place. Countless worlds lies spread across
@@ -104,7 +104,9 @@ const SolarSystemHistory = () => {
           observations, and complex simulations by scientists trying to figure out our
           place in space</p>
 
-        <img src={videoOneGif2} alt="" />
+        <div className="justify-center gif__img">
+          <img src={videoOneGif2} alt="" />
+        </div>
         <p>Our planetary system is located in an outer spiral arm of the Milky Way
           galaxy. Our solar system consists of our star, the Sun, and everything
           bound to it by gravity – the planets Mercury, Venus, Earth, Mars, Jupiter,

@@ -17,7 +17,7 @@ const SolarSystem = () => {
   return (
     <>
       <div className="main">
-        <div className="solar-background">
+        <div className="solar-background ">
           <div className="content-of-solar-sytem">
             <h1 className={scrollY > 821 && "text-style"}>History of the planets of <br />
               the Solar system</h1>

@@ -12,24 +12,24 @@ import videoOneGif23 from "../../image/giphysss.gif";
 const StarHistory = () => {
     const QuizData = {
         questions: [
-          {
-            question: "What is the process by which stars convert hydrogen into helium, releasing energy?",
-            options: ["Fusion", "Fission", "Evaporation", "Condensation"],
-            correctAnswer: "Fusion",
-          },
-          {
-            question: "Which famous astronomer proposed the Hertzsprung-Russell diagram to classify stars?",
-            options: ["Carl Sagan", "Edwin Hubble", "Andreas Cellarius", "Ejnar Hertzsprung and Henry Norris Russell"],
-            correctAnswer: "Ejnar Hertzsprung and Henry Norris Russell",
-          },
-          {
-            question: "What type of star is the most common in the universe?",
-            options: ["White Dwarf", "Red Giant", "Main Sequence", "Neutron Star"],
-            correctAnswer: "Main Sequence",
-          },
+            {
+                question: "What is the process by which stars convert hydrogen into helium, releasing energy?",
+                options: ["Fusion", "Fission", "Evaporation", "Condensation"],
+                correctAnswer: "Fusion",
+            },
+            {
+                question: "Which famous astronomer proposed the Hertzsprung-Russell diagram to classify stars?",
+                options: ["Carl Sagan", "Edwin Hubble", "Andreas Cellarius", "Ejnar Hertzsprung and Henry Norris Russell"],
+                correctAnswer: "Ejnar Hertzsprung and Henry Norris Russell",
+            },
+            {
+                question: "What type of star is the most common in the universe?",
+                options: ["White Dwarf", "Red Giant", "Main Sequence", "Neutron Star"],
+                correctAnswer: "Main Sequence",
+            },
         ],
-      };
-            
+    };
+
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState('');
     const [showAlert, setShowAlert] = useState(false);
@@ -71,7 +71,7 @@ const StarHistory = () => {
     return (
         <>
             <Navbar />
-            <div className="StarHistory">
+            <div className="StarHistory content-of-history">
                 <h1>Stars History</h1>
                 <p>A star is a luminous ball of gas, mostly hydrogen and
                     helium, held together by its own gravity. Nuclear fusion reactions in its core support the
@@ -85,7 +85,7 @@ const StarHistory = () => {
                 </Link>
             </div>
 
-            <div className="how-the-universe-work">
+            <div className="how-the-universe-work histories-contents">
                 <h1>What Are Stars
                 </h1>
                 <h3>What is a star?</h3>
@@ -93,7 +93,10 @@ const StarHistory = () => {
                     helium, held together by its own gravity. Nuclear fusion reactions in its core support the
                     star against gravity and produce photons and heat, as well as small amounts of heavier
                     elements. The Sun is the closest star to Earth.</p>
-                <img className='images-space' src={videoOneGif22} alt="" />
+                <div className="justify-center gif__img">
+                    <img className='images-space' src={videoOneGif22} alt="" />
+                </div>
+
                 <h3>Where do stars come from?</h3>
                 <p>According to current star formation theory, stars are born as clumps within gigantic gas clouds
                     that collapse in on themselves. The cloud’s material heats up as it falls inward under the force
@@ -135,8 +138,10 @@ const StarHistory = () => {
                     the Sun, but have lifetimes of only a few million years. Although extreme stars such
                     as these are believed to have been common in the early Universe, today they are
                     extremely rare - the entire Milky Way galaxy contains only a handful of hypergiants.</p>
+                <div className="justify-center gif__img">
+                    <img className='images-space' src={videoOneGif23} alt="" />
 
-                <img className='images-space' src={videoOneGif23} alt="" />
+                </div>
                 <br />
 
                 <h3>Stars and their fates </h3>

@@ -9,7 +9,7 @@ const NasaFuture = () => {
     return (
         <>
             <Navbar />
-            <div className="nasa-history">
+            <div className="nasa-history content-of-history">
                 <h1>The Future Of NASA
                 </h1>
                 <p>NASA’s future will continue to be a story of human exploration, technology, and science. We will go
@@ -24,7 +24,7 @@ const NasaFuture = () => {
                 </Link>
             </div>
 
-            <div className="how-the-universe-work">
+            <div className="how-the-universe-work histories-contents">
                 <h1>The Future
                 </h1>
                 <p>NASA’s future will continue to be a story of human exploration, technology, and science. We will go
@@ -35,7 +35,8 @@ const NasaFuture = () => {
                     exploration. Our scientists will work to increase an understanding of our planet and our place in the
                     universe. We will continue to try to answer the question, “Are we alone?”
                 </p>
-                <img className='img-space' src={videoOneGif22} alt="" />
+                <div className="justify-center gif__img">
+                    <img className='img-space' src={videoOneGif22} alt="" /></div>
                 <p>Unlike the way the space program started, NASA will not be racing a competitor. Rather, we will build
                     upon the community of industrial, international, and academic partnerships forged for the space
                     station. Commercial companies will play an increasing role in the space industry: launching rockets

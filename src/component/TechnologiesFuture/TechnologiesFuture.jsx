@@ -15,7 +15,7 @@ const TechnologiesFuture = () => {
     return (
         <>
             <Navbar />
-            <div className="TechnologiesFuture">
+            <div className="TechnologiesFuture content-of-history">
                 <h1>Technology
                 </h1>
                 <p>When NASA was created 60 years ago, it had to invent the technology to get where we needed to go,
@@ -38,7 +38,10 @@ const TechnologiesFuture = () => {
                     Can you take enough? Can you grow it or make it in space? Can you do your own repairs and
                     maintenance? As before, NASA will adapt solutions to these and other challenges into technologies
                     that will improve life at home.</p>
-                <img src={videoOneGif222} alt="" className='image-space' />
+                <div className="justify-center gif__img  more-images">
+                    <img src={videoOneGif222} alt="" className='image-space' />
+                </div>
+
                 <h3>3D Printer
                 </h3>
                 <p>International Space Station’s 3D printer manufactures objects out of plastic. NASA is developing more
@@ -46,7 +49,10 @@ const TechnologiesFuture = () => {
                     make parts in space will come in handy during emergencies.</p>
 
                 <h3>RASSOR</h3>
-                <img src={videoOneGif22} alt="" className='image-spacd' />
+                <div className="justify-center gif__img">
+                    <img src={videoOneGif22} alt="" className='image-spacd' />
+                </div>
+
                 <p>NASA’s Regolith Advanced Surface Systems Operations Robot (RASSOR) excavating simulated
                     extraterrestrial soils. NASA is developing technologies to drill into regolith (space word for “soil”) on
                     the Moon, Mars, and asteroids and to convert it into oxygen, drinkable water, other products to
@@ -57,7 +63,10 @@ const TechnologiesFuture = () => {
                     billions of miles, the delay and potential for disruption or data loss is significant. Advanced
                     communication technologies are essential to enhance deep space exploration for both robotic and
                     human missions. Delay/Disruption Tolerant Networking (DTN) is NASA’s solution to reliable </p>
-                <img src={videoOneGif2} alt="" className='imafe-space' />
+                <div className="justify-center gif__img">
+                    <img src={videoOneGif2} alt="" className='imafe-space' />
+
+                </div>
                 <p>internetworking for space missions. DTN will enable a Solar System Internet with automated data
                     delivery between users no matter how distant and intermittent their connections may be</p>
 
@@ -69,13 +78,18 @@ const TechnologiesFuture = () => {
                     technologies can dramatically improve communications between spacecraft and Earth—10 to 100
                     times better than radio communications’ data rates.
                 </p>
-                <img src={videoOneGif1} alt="" className='image-space' />
+                <div className="justify-center gif__img">
+                    <img src={videoOneGif1} alt="" className='image-space' />
+                </div>
+
 
                 <h3>DSOC</h3>
                 <p>The Deep Space Optical Communications (DSOC) package aboard NASA’s Psyche will use a light or
                     laser communications to transmit more data to Earth in a given amount of time. </p>
+                <div className="justify-center gif__img">
+                    <img src={videoOneGif} alt="" className="image-space" />
 
-                <img src={videoOneGif} alt="" className="image-space" />
+                </div>
                 <p>The DSOC seeks to
                     increase spacecraft communications performance and efficiency without increasing the mission
                     burden in mass, volume, power and/or spectrum.</p>

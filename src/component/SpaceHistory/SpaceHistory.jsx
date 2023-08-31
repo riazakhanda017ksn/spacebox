@@ -28,8 +28,8 @@ function SpaceHistory() {
       },
     ],
   };
-  
-  
+
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [showAlert, setShowAlert] = useState(false);
@@ -70,9 +70,8 @@ function SpaceHistory() {
   return (
     <>
       <Navbar />
-      <div className="history-banner">
+      <div className="history-banner content-of-history">
         <h1>History Of Our Space</h1>
-        <h4>How was the space Created?</h4>
         <p>During the Big Bang, all of the space, time, matter, and energy in the Universe was
           created. This giant explosion hurled matter in all directions and caused space itself to
           expand. As the Universe cooled, the material in it combined to form galaxies, stars, and
@@ -84,13 +83,13 @@ function SpaceHistory() {
           </button>
         </Link>
       </div>
-      <div className="how-the-universe-work">
+
+      <div className="how-the-universe-work histories-contents">
 
 
 
         <h1>What is the Milky <br /> way
           Galaxy</h1>
-        <h3>What is Milky way Galaxy?</h3>
         <p>Imagine the Universe! Our Sun (a star) and all the planets around it are part of a galaxy
           known as the Milky Way Galaxy. A galaxy is a large group of stars, gas, and dust bound
           together by gravity. They come in a variety of shapes and sizes. The Milky Way is a
@@ -124,7 +123,10 @@ function SpaceHistory() {
           way to neighboring Saturn, as did New Horizons on its quest for Pluto and
           the Kuiper Belt. NASA’s Juno spacecraft, which arrived in the Jovian
           system in July 2016, is currently studying the giant planet from orbit</p>
-        <img className='images-space' src={videoOneGifs} alt="" />
+        <div className="justify-center">
+          <img className='images-space' src={videoOneGifs} alt="" />
+
+        </div>
 
         <h3>Significant Events</h3>
         <li style={{ paddingTop: '14px' }}>
@@ -219,7 +221,7 @@ function SpaceHistory() {
           )}
         </div>
       </div>
-    <Footer/>
+      <Footer />
     </>
   );
 }
