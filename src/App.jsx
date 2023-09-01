@@ -13,6 +13,7 @@ import NasaFuture from "./component/NavaFuture/NavaFuture";
 import MoonFuture from "./component/MoonFuture/MoonFuture";
 import EarthFuture from "./component/EarthFuture/EarthFuture";
 import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFuture";
+import Game from "./component/Game/Game";
 // import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         {/* <AnimatePresence mode="wait"> */}
           <Routes>
             <Route path="/" element={<Home />} />
+            {/* <Route path="/game" element={<Game />} /> */}
             <Route path="/techhnolies-future" element={<TechnologiesFuture />} />
             <Route path="/earth-future" element={<EarthFuture />} />
             <Route path="/moon-future" element={<MoonFuture />} />

@@ -114,6 +114,28 @@ button#edit {
   letter-spacing: 1px;
 }
   @media only screen and (max-width: 990px)  {
+
+   .histories-contents {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9294117647), rgba(0, 0, 0, 0.349)), url(./image/pexels-kai-pilger-1341279.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding:  30px !important;
+  }
+
+  .content-of-history {
+    padding: 100px 40px !important
+}
+
+.content-of-history h1 {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: inherit;
+}
+
     .how-the-universe-work h1 {
       font-weight: 500;
       font-size: 24px;
@@ -208,11 +230,9 @@ button#edit {
     margin-bottom: 20px;
 }
 
-  .content-of-history h1 {
-    margin-bottom: 0;
-    font-size: inherit;
-    font-weight: inherit;
-    letter-spacing: inherit;
-  }
+.histories-contents {
+
+  padding: 30px !important;
+}
     
   }

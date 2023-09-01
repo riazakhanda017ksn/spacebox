@@ -71,7 +71,7 @@ const SolarSystemDetails = () => {
           </button>
         </Link>
       </div>
-      <div className="solar-systems histories-contents">
+      <div className="solar-systems ">
         <h3>History of {name}</h3>
         <p>{history1}</p>
         <p>{history2}</p>

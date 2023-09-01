@@ -1,0 +1,214 @@
+// /* App.css */
+
+// /* Styles for the App container */
+// .App {
+//     text-align: center;
+//     background-color: #8d8d8d;
+//     color: #fff;
+//     font-family: Arial, sans-serif;
+//     padding: 20px;
+//   }
+  
+//   /* Styles for the game container */
+//   .game-container {
+//     position: relative;
+//     width: 800px;
+//     height: 600px;
+//     margin: 0 auto;
+//     border: 2px solid #333;
+//     background-color: #e9e9e9;
+//   }
+  
+//   /* Styles for the Earth */
+//   .earth {
+//     position: absolute;
+//     width: 100px;
+//     height: 100px;
+//     background-color: #0077ff;
+//     border-radius: 50%;
+//     left: 350px;
+//     top: 250px;
+//   }
+  
+//   /* Styles for the Cannon */
+//   .cannon {
+//     position: relative;
+//     width: 40px;
+//     height: 40px;
+//     background-color: #ff0000;
+//     border-radius: 50%;
+//     /* Center the cannon based on the cursor position */
+//     left: calc(var(--cannon-x) - 20px);
+//     top: calc(var(--cannon-y) - 20px);
+//     transition: left 0.1s ease, top 0.1s ease; /* Smooth cannon movement */
+//   }
+  
+//   /* Styles for the Enemy */
+//   .enemy {
+//     position: absolute;
+//     width: 30px;
+//     height: 30px;
+//     background-color: #ffcc00;
+//     border-radius: 50%;
+//   }
+  
+//   /* Styles for the Bullet */
+//   .bullet {
+//     position: absolute;
+//     width: 5px;
+//     height: 20px;
+//     background-color: #fff;
+//     left: 0;
+//     top: 0;
+//   }
+  
+//   /* Styles for the Timer */
+//   .timer {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     color: #fff;
+//     font-size: 20px;
+//   }
+  
+//   /* Styles for the Scoreboard */
+//   .scoreboard {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     color: #fff;
+//     font-size: 20px;
+//   }
+  
+//   /* App.css */
+
+// /* ... (previous styles) */
+
+// /* Styles for the Cannon */
+// .cannon {
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     background-color: #ff0000;
+//     border-radius: 50%;
+//     /* Center the cannon based on the cursor position */
+//     left: calc(var(--cannon-x) - 20px);
+//     top: calc(var(--cannon-y) - 20px);
+//     cursor: pointer; /* Show the pointer cursor when hovering over the cannon */
+//     transition: left 0.1s ease, top 0.1s ease; /* Smooth cannon movement */
+//   }
+  
+//   /* Styles for the Muzzle Flash (Firing Effect) */
+//   .muzzle-flash {
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     background-color: #ffcc00;
+//     border-radius: 50%;
+//     opacity: 0; /* Initially hidden */
+//     transition: opacity 0.1s ease;
+//   }
+  
+//   .muzzle-flash.fire {
+//     opacity: 1; /* Display muzzle flash when firing */
+//   }
+  
+//   /* ... (previous styles) */
+
+//   /* App.css */
+
+// /* Styles for the App container */
+// .App {
+//     text-align: center;
+//     background-color: #000;
+//     color: #fff;
+//     font-family: Arial, sans-serif;
+//     padding: 20px;
+//   }
+  
+//   /* Styles for the game container */
+//   .game-container {
+//     position: relative;
+//     width: 800px;
+//     height: 600px;
+//     margin: 0 auto;
+//     border: 2px solid #333;
+//     background-color: #000;
+//     cursor: none; /* Hide the default cursor */
+//   }
+  
+//   /* Styles for the Earth */
+//   .earth {
+//     position: absolute;
+//     width: 100px;
+//     height: 100px;
+//     background-color: #0077ff;
+//     border-radius: 50%;
+//     left: 350px;
+//     top: 250px;
+//   }
+  
+//   /* Styles for the Cannon */
+//   .cannon {
+//     position: absolute;
+//     width: 40px;
+//     height: 40px;
+//     background-color: #ff0000;
+//     border-radius: 50%;
+//     /* Center the cannon based on the cursor position */
+//     cursor: none; /* Hide the cursor over the cannon */
+//     transition: left 0.1s ease, top 0.1s ease; /* Smooth cannon movement */
+//   }
+  
+//   /* Styles for the Muzzle (Firing Effect) */
+//   .muzzle {
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     background-color: #ffcc00;
+//     border-radius: 50%;
+//     opacity: 0; /* Initially hidden */
+//     transition: opacity 0.1s ease;
+//   }
+  
+//   .muzzle.fire {
+//     opacity: 1; /* Display muzzle flash when firing */
+//   }
+  
+//   /* Styles for the Enemy */
+//   .enemy {
+//     position: absolute;
+//     width: 30px;
+//     height: 30px;
+//     background-color: #ffcc00;
+//     border-radius: 50%;
+//   }
+  
+//   /* Styles for the Bullet */
+//   .bullet {
+//     position: absolute;
+//     width: 5px;
+//     height: 5px;
+//     background-color: #fff;
+//     border-radius: 50%;
+//   }
+  
+//   /* Styles for the Timer */
+//   .timer {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     color: #fff;
+//     font-size: 20px;
+//   }
+  
+//   /* Styles for the Scoreboard */
+//   .scoreboard {
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//     color: #fff;
+//     font-size: 20px;
+//   }
+  
+  
