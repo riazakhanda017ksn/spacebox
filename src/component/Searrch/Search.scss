@@ -1,0 +1,31 @@
+.datagrids {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    padding:120px;
+    overflow: hidden;
+    margin-top:130px ;
+}
+
+.grid-s img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.grid-s p{
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.grid-s{
+    border: 1px solid white;
+  
+}
+
+.DATA-content{
+    padding: 20px;
+}

@@ -90,12 +90,12 @@ const Navbar = () => {
                       <Link to='/earth-future' className="x"> Earth's Future
                       </Link>
                       <Link to='/techhnolies-future' className="x"> Technology</Link>
-                      <Link to='/' className="x"> Human Spaceflight</Link>
+                      {/* <Link to='/' className="x"> Human Spaceflight</Link>
                       <Link to='/' className="x"> Universe's Future </Link>
                       <Link to='/' className="x"> Solar System
                       </Link>
                       <Link to='/' className="x"> NASA'S Event
-                      </Link>
+                      </Link> */}
                     </div>
                   )}
                 </div>
@@ -111,12 +111,13 @@ const Navbar = () => {
             <Link to="/wanna-play-game">Wanna Play Game</Link>
             <a >Contact</a>
           </div>
+          <Link to={'/search'} style={{textDecoration:'none',color:"white"}}>
           <div className="search">
             <p>Search </p>
-            <a href="">
+            <a>
               <SearchIcon />
             </a>
-          </div>
+          </div></Link>
         </div>
       </div>
 

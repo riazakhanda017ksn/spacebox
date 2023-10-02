@@ -27,20 +27,18 @@ const Footer = () => {
           <Link to='/earth-future'> Earth's Future
           </Link>
           <Link to='/techhnolies-future'> Technology </Link>
-          <Link to='/'> Human Spaceflight
+          {/* <Link to='/'> Human Spaceflight
           </Link>
           <Link to='/'> Universe's Future </Link>
           <Link to='/'> Solar System
           </Link>
           <Link to='/'> NASA'S Event
-          </Link>
+          </Link> */}
         </div>
         <div className="footer-item position-space">
           <h4 style={{ paddingBottom: '10px' }}>Games</h4>
           <Link to='/wanna-play-game'> Clicker Game  </Link>
-          <Link to='/'> Lorem  </Link>
-          <Link to='/'> Solar System.
-          </Link>
+
 
         </div>
       </div>

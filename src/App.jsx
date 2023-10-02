@@ -14,10 +14,37 @@ import MoonFuture from "./component/MoonFuture/MoonFuture";
 import EarthFuture from "./component/EarthFuture/EarthFuture";
 import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFuture";
 import Game from "./component/Game/Game";
+import Search from "./component/Searrch/Search";
+import { useState } from "react";
+import Data from "./component/Searrch/Data";
 // import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+  const searchNASA = async (query) => {
+    try {
+      const apiKey = 'fWsXnP5K3dfYGBTJgIYjAIau0ihJq7Np0CgfjhE2';
+      const apiUrl = `https://images-api.nasa.gov/search?q=${query}&media_type=image`;;
+
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+
+      if (data.collection.items) {
+        const results = data.collection.items.map((item) => ({
+          title: item.data[0].title,
+          description: item.data[0].description,
+          image: item.links[0].href,
+        }));
+
+        setSearchResults(results);
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
   return (
+   
     <>
       <BrowserRouter>
         <ScrollTop />
@@ -36,6 +63,8 @@ function App() {
             <Route path="/universal-history" element={<UniverseHistory />} />
             <Route path="/wanna-play-game" element={< SolarSystemGame />} />
             <Route path="/milky-way-history" element={< SpaceHistory />} />
+            <Route path="/search" element={< Search onSearch={searchNASA} />} />
+            <Route path="/search-result" element={< Data data={searchResults}  />} />
             <Route
               path="/solar-system-details/:id"
               element={<SolarSystemDetails />}
@@ -43,6 +72,7 @@ function App() {
           </Routes>
           {/* </AnimatePresence> */}
       </BrowserRouter>
+      
     </>
   );
 }

@@ -3,7 +3,10 @@ body{
     font-family: 'Montserrat', sans-serif !important;
     background:black
   }
-
+  button.selected {
+    background: white !important;
+    color: black !important;
+}
  .content-of-history {
     padding: 0 120px;
 }
@@ -99,6 +102,53 @@ button#edit {
   transition: 0.3s ease-in-out;
 }
 
+h1.text-thin {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 0 !important;
+}
+
+.searchs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 524px;
+  border: 1px solid #ffffffb7;
+  padding: 14px;
+}
+.searchs input::placeholder{
+color:#ffffffb7 ;
+outline: none !important;  
+}
+
+.data-item span {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.data-item p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 23px;
+}
+.searchs input {
+  background: none;
+  border: none !important;
+  font-family: montserrat;
+  outline: none;
+  width: 100%;
+  color: #fff;
+}
+
+.searchs span {
+  font-size: 21px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
 .gif__img img {
   width: 60%;
   height: 50%;
@@ -114,7 +164,35 @@ button#edit {
   font-size: 30px;
   letter-spacing: 1px;
 }
+
   @media only screen and (max-width: 990px)  {
+    .searchs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.7176470588);
+      padding: 10px;
+      margin: 0 auto;
+      position: relative;
+      left: -8px;
+  }
+    .datagrids {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
+      padding:20px;
+      overflow: hidden;
+      margin-top:100px ;
+  }
+  
+  .grid-s img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+  }
     .solar-system-game {
       background: linear-gradient(360deg,rgb(0,0,0),rgba(0,0,0,.66)),url(/assets/dhumketu-63c754cb.jpg);
       background-repeat: no-repeat;
