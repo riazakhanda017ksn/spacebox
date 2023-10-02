@@ -193,7 +193,13 @@ const Navbar = () => {
                   )}
 
 
-
+                  <Link to={'/search'} style={{textDecoration:'none',color:"white"}} className="searchbar">
+                 <div className="search">
+                 <p>Search </p>
+                 <a>
+              <SearchIcon />
+            </a>
+          </div></Link>
                 </div>
                 <a href="#">Contact</a>
               </motion.div>

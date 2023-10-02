@@ -166,6 +166,33 @@ outline: none !important;
 }
 
   @media only screen and (max-width: 990px)  {
+    .search {
+      padding-right: 0;
+  }
+  a.searchbar {
+    height: 0 !important;
+    display: inline-block;
+    position: relative;
+    bottom: 34px;
+    font-family: 'Montserrat';
+    left: 4px;
+}
+  .search p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  justify-content: center;
+}
+
+.search svg {
+  color: white;
+  font-size: 18px;
+}
     .searchs {
       display: flex;
       align-items: center;
