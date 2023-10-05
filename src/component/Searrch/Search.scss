@@ -29,3 +29,23 @@
 .DATA-content{
     padding: 20px;
 }
+
+.grid-s p {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.DATA-content a {
+    color: #ffffffc2;
+    font-size: 14px;
+    position: relative;
+    bottom: 13px;
+    transition: .3s ease-in-out;
+}
+
+.DATA-content a:hover{
+    color: #FFF;
+}

@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import Search from './Search';
 
 const Data = ({data}) => {
+    console.log(data);
     return (
         <>
         {

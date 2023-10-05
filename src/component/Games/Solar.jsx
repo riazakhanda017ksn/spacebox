@@ -148,7 +148,9 @@ function Solar() {
           {gameOver ? (
             <div className='game-over'><p>Game Over! Your Score: {score}</p>
             <img src={score === randomNumber || score > randomNumber ? img2 : img3} alt="" />
-            <p>{score === randomNumber || score > randomNumber ? "You are Winner!" :"You failed! Try again."}</p></div>
+            <p>{score === randomNumber || score > randomNumber ? "You are Winner!" :"You failed! Try again."}</p>
+            <a href="">Let,s Play Again</a>
+            </div>
             
           ) : (
             <div>

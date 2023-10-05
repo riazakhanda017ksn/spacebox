@@ -13,10 +13,13 @@ import NasaFuture from "./component/NavaFuture/NavaFuture";
 import MoonFuture from "./component/MoonFuture/MoonFuture";
 import EarthFuture from "./component/EarthFuture/EarthFuture";
 import TechnologiesFuture from "./component/TechnologiesFuture/TechnologiesFuture";
-import Game from "./component/Game/Game";
 import Search from "./component/Searrch/Search";
 import { useState } from "react";
 import Data from "./component/Searrch/Data";
+import NasaOpenScience from "./component/NasaOpenScience/NasaOpenScience";
+import NasaOpenScienceDetails from "./component/NasaOpenScience/NasaOpenScienceDetails";
+import Contact from "./component/Contact/Contact";
+import About from "./component/Team/Team";
 // import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -65,11 +68,20 @@ function App() {
             <Route path="/milky-way-history" element={< SpaceHistory />} />
             <Route path="/search" element={< Search onSearch={searchNASA} />} />
             <Route path="/search-result" element={< Data data={searchResults}  />} />
+            <Route path="/nasa-open-science" element={<NasaOpenScience />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About/>} />
             <Route
               path="/solar-system-details/:id"
               element={<SolarSystemDetails />}
             />
+            <Route
+              path="/nasaOpenScienceDetails/:id"
+              element={<NasaOpenScienceDetails/>}
+            />
+            
           </Routes>
+          
           {/* </AnimatePresence> */}
       </BrowserRouter>
       

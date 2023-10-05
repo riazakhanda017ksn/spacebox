@@ -1,0 +1,197 @@
+.item-of-grid {
+    background-repeat: no-repeat !important;
+    padding-top: 230px;
+    background-size: cover !important;
+    margin-bottom: 30px;
+    border-radius: 10px;
+   
+}
+
+.details-page-banner{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FFF;
+    justify-content: center;
+}
+
+.rows-for-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 22px;
+    grid-row-gap: 0px;
+    }
+
+    .rows-for-title {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 22px;
+        grid-row-gap: 0px;
+        }
+
+    .science-of-nasa-container{
+        padding: 100px 120px;
+
+    }
+    .title-posts  h4 {
+        color: #FFF;
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 400;
+    }
+    .details-page-banner p {
+        width: 60%;
+        text-align: center;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+    .details-page-banner h1 {
+        font-size: 40px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+    }
+
+    .data-item-name{
+        padding: 20px;
+        color: white;
+    }
+    
+    .data-item-name h3{
+        font-weight: 500;
+        font-size: 23px;
+    }
+
+    .data-item-name p {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        color: #FFF;
+        transition: .3s ease-in-out;
+    }
+    
+    .data-item-name p:hover{
+        letter-spacing: 1px;
+    }
+    
+    .data-item-name a{
+        text-decoration: none;
+    }
+
+    .data-item-name svg {
+        font-size: 19px;
+        margin-top: 6px;
+    }
+
+    .science-of-nasa-container h2 {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 60px;
+        font-weight: 600;
+    }
+
+
+    .flex-targets {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .target h5 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .target h6 {
+        font-size: 18px;
+        margin-top: 18px;
+        font-weight: 400;
+    }
+
+    .read-some-news p {
+        font-size: 20px !important;
+        font-weight: 500;
+        line-height: 33px !important;
+    }
+
+    .iframe-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iframe-part iframe {
+        border: 2px solid #ffffff73;
+    }
+
+    h3.heading {
+        color: white;
+        font-size: 43px;
+        margin: 0;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+
+    .need-space-top-side{
+        margin-top: 40px;
+    }
+
+    .flex-read-article img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .flex-read-article {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.4392156863);
+        padding: 11px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .read-some-news{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .read-some-news {
+        position: relative;
+        top: 12px;
+    }
+
+    .flex-read-article a {
+        width: 100%;
+        color: white;
+        font-size: 12px;
+        margin: 10px 0;
+        text-align: end;
+        letter-spacing: 2px;
+    }
+
+    .flex-read-article span {
+        display: block;
+        margin-top: 29px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .flex-read-article {
+        height: 580px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .item-of-grid.need-space-top-side {
+        height: 360px;
+    }

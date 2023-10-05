@@ -166,6 +166,210 @@ outline: none !important;
 }
 
   @media only screen and (max-width: 990px)  {
+    .item-of-grid.need-space-top-side {
+      height: 100%;
+  }
+    .our-teams {
+      margin-bottom: 27px;
+  }
+  .flexing-center {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+}
+    .team-grids {
+
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 22px;
+      grid-row-gap: 0px;
+      margin-top: 100px;
+  }
+    .the-team span {
+      width: 197px;
+      border: 1px solid white;
+      height: 1px;
+      display: inline-block;
+      position: relative;
+      left: 68px;
+      bottom: 8px;
+  }
+    .About-us p {
+      display: block;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin-top: 20px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 15px;
+  }
+    .About-us h2 {
+      font-size: 35px;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+      text-align: center;
+  }
+    .About-us h1 {
+      font-size: 56px;
+      letter-spacing: 9px;
+      font-family: sans-serif;
+      margin-bottom: 0;
+      font-weight: 800;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.168627451);
+      color: transparent;
+      font-family: Mulish, sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+    .flexes.new-flexes p {
+      text-transform: uppercase;
+      width: 100px;
+  }
+    .contact-form button {
+      background: none;
+      display: block;
+      font-size: 16px;
+      margin: 60px 0;
+      outline: none;
+      padding: 17px 26px;
+      text-transform: capitalize;
+      border: 2px solid #efefef;
+      color: #efefef;
+      cursor: pointer;
+      font-family: Montserrat;
+      transition: 0.3s ease-in-out;
+  }
+    .contact-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      gap: 20px !important
+  }
+    .contact-form {
+      width: 100%;
+      position: relative;
+      left: 0;
+  }
+    .contact-us h2 {
+      font-size: 41px;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+      margin-top: 11px;
+  }
+  .contact-us p {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+    .contact-us {
+      padding: 20px;
+  }
+    .contact-us h1 {
+      font-size: 50px;
+      letter-spacing: 9px;
+      font-family: sans-serif;
+      margin-bottom: 0;
+      font-weight: 800;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.168627451);
+      color: transparent;
+      font-family: Mulish, sans-serif;
+  }
+    .datagrids {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
+      padding: 20px;
+      overflow: hidden;
+      margin-top: 0 !important;
+  }
+    .flex-read-article {
+      height: auto !important;
+      padding: 28px;
+      border-radius: 8px;
+  }
+
+  .rows-for-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 22px;
+    grid-row-gap: 0px;
+    padding: 10px 10px !important
+}
+  .content h1 {
+    font-size: 34px !important;
+    line-height: 45px !important;
+}
+  .read-some-news p {
+    font-size: 17px !important;
+    font-weight: 500;
+    line-height: 27px !important;
+}
+    iframe {
+      width: 100% !important;
+  }
+    .target h6 {
+      font-size: 18px;
+      margin-top: 18px !important;
+      font-weight: 400;
+      margin: 0;
+  }
+    .flex-targets {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      flex-direction: column;
+      text-align: center;
+  }
+    .details-page-banner {
+    text-align: center;
+    padding: 20px;
+    object-fit: cover;
+    background-size: cover !important;
+}
+    
+    .science-of-nasa-container{
+      padding: 30px 30px;
+
+  }
+    .rows-for-title {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 22px;
+      grid-row-gap: 0px;
+      }
+    .details-page-banner p {
+      width: 100%;
+      text-align: center;
+      line-height: 24px;
+      letter-spacing: 1px;
+  }
+    .rows-for-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 22px;
+      grid-row-gap: 0px;
+      padding: 100px 120px;
+      }
+  
+  
     .search {
       padding-right: 0;
   }
@@ -353,3 +557,8 @@ outline: none !important;
 }
     
   }
+
+  .read-some-news p {
+    font-size: 25px;
+    font-weight: 500;
+}

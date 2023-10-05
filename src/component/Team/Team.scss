@@ -1,0 +1,106 @@
+.About-us{
+    padding: 120px;
+    color: white;
+}
+
+.About-us h1 {
+    font-size: 116px;
+    letter-spacing: 9px;
+    font-family: sans-serif;
+    margin-bottom: 0;
+    font-weight: 800;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.168627451);
+    color: transparent;
+    font-family: Mulish, sans-serif;
+    text-align: center;
+}
+
+.About-us h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.About-us p {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.the-team{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.the-team span {
+    width: 160px;
+    border: 1.5px solid white;
+    height: 1.5px;
+    display: inline-block;
+}
+
+.the-team span {
+    width: 219px;
+    border: 1px solid white;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    left: 107px;
+    bottom: 11px;
+}
+
+.team-grids{
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 22px;
+        grid-row-gap: 0px;
+        margin-top: 100px;
+}
+
+.our-teams img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+
+}
+
+.our-teams h4 {
+    font-size: 25px;
+    left: 5px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.our-teams h5 {
+    margin: 7px 0;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.flexing-center {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    left: 140px;
+}

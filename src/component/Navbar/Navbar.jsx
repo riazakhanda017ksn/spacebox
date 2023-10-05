@@ -49,6 +49,7 @@ const Navbar = () => {
           </div>
           <div className="nav-item">
             <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
             <>
               <a className="need-gap-for-pc" onClick={toggleDropdown}>History <KeyboardArrowDownIcon /> </a>
               <>
@@ -90,12 +91,7 @@ const Navbar = () => {
                       <Link to='/earth-future' className="x"> Earth's Future
                       </Link>
                       <Link to='/techhnolies-future' className="x"> Technology</Link>
-                      {/* <Link to='/' className="x"> Human Spaceflight</Link>
-                      <Link to='/' className="x"> Universe's Future </Link>
-                      <Link to='/' className="x"> Solar System
-                      </Link>
-                      <Link to='/' className="x"> NASA'S Event
-                      </Link> */}
+                   
                     </div>
                   )}
                 </div>
@@ -109,7 +105,8 @@ const Navbar = () => {
 
 
             <Link to="/wanna-play-game">Wanna Play Game</Link>
-            <a >Contact</a>
+            <Link to={'/nasa-open-science'}>NASA Open Science</Link>
+            <Link to='/contact'>Contact</Link>
           </div>
           <Link to={'/search'} style={{textDecoration:'none',color:"white"}}>
           <div className="search">
@@ -154,6 +151,8 @@ const Navbar = () => {
                 exit={{ opacity: 0, y: -20 }}
               >
                 <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+
                 <Link to="/wanna-play-game">Wanna Play Game</Link>
                 <div>
                   <a className="specifiq-gap" onClick={toggleDropdown}>History <KeyboardArrowDownIcon /> </a>
@@ -201,7 +200,9 @@ const Navbar = () => {
             </a>
           </div></Link>
                 </div>
-                <a href="#">Contact</a>
+                <Link to={'/nasa-open-science'}>NASA Open Science</Link>
+                <Link to='/contact'>Contact</Link>
+        
               </motion.div>
             )}
           </AnimatePresence>
