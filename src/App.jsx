@@ -27,7 +27,7 @@ function App() {
   const searchNASA = async (query) => {
     try {
       const apiKey = 'fWsXnP5K3dfYGBTJgIYjAIau0ihJq7Np0CgfjhE2';
-      const apiUrl = `https://images-api.nasa.gov/search?q=${query}&media_type=image`;;
+      const apiUrl = `https://images-api.nasa.gov/search?q=${query}&media_type=image`;
 
       const response = await fetch(apiUrl);
       const data = await response.json();

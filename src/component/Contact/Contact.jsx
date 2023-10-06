@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import Mailto from 'reactv16-mailto';
+import swal from "sweetalert";
 
 const Contact = () => {
     const form = useRef();
@@ -13,12 +14,20 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_rz51u7h', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+      emailjs.sendForm('service_41bsvru', 'template_lqtdvei', form.current, '_wSdSEsI9zp3k5bin')
+      .then(
+        (result) => {
+          if (result) {
+            swal(
+                "Thanks for your mesaage!"
+            );
+          }
+        },
+        (error) => {
+            swal("Failed !", "Please try again !");
+        }
+      );
+    e.target.reset();
     };
     return (
         <>
@@ -29,25 +38,25 @@ const Contact = () => {
            <p>If you would like to hear from us, please email us. Please feel free to contact us if you have a question or just want to say hi. Please expect a reply from me as soon as possible!</p>
             
             <div className="contact-form">
-                <form action="">
+                <form ref={form} onSubmit={sendEmail}>
                     <div className="contact-flex">
                         <p>
-                        <input type="text" placeholder='Name*' required/>
+                        <input type="text" placeholder='Name*' name='name' required/>
                         </p>
                         <p>
-                        <input type="email" placeholder='Email*' required/>
+                        <input type="email" placeholder='Email*' name='email' required/>
                         </p>
                     </div>
 
                     <div className="form">
                         <p>
-                        <input type="text" placeholder='Subject*' required/>
+                        <input type="text" placeholder='Subject*' name='subject' required/>
                         </p>
                     </div>
 
                     <div className="another-div">
                         <p>
-                            <textarea placeholder='Message' cols="15" rows="4"></textarea>
+                            <textarea placeholder='Message' cols="15" rows="4" name='message'></textarea>
                         </p>
                     </div>
 
